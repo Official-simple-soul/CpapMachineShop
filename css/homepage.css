@@ -415,6 +415,12 @@ a:link {
     white-space: nowrap;
 }
 
+.form-control {
+    box-shadow: none !important;
+    background-color: #F2F0F2 !important;
+    color: #49735A !important;
+}
+
 @media only screen and (max-width: 1024px) {
     .swiper-button-prev {
         margin-top: 200px;
