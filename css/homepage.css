@@ -19,6 +19,18 @@ a:link {
     line-height: 24px;
 }
 
+.btn-primary {
+    background-color: #064749 !important;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 9px 40px;
+    transition: ease-in-out 0.5s;
+}
+
 .hero-bg-img {
     background-image: url(../assets/images/HomePage_images/Image.png);
     background-position: center;
