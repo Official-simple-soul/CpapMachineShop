@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    ;
+}
+
+
+
+
+/* universal style */
+p {
+    font-size: 18px !important;
+}
+
+
+.txt-pri-col {
+    color: #064749;
+}
+
+.txt-sec-col {
+    color: #49735A;
+}
+
+.booking-btn {
+    background-color: #064749 !important;
+    padding: 10px 38px 10px 38px;
+    border-radius: 30px !important;
+    border: none;
+    color: white !important;
+}
+
+
+.drop-p .dropdown p,
+ul {
+    color: #49735A;
+    font-size: 16px;
+}
+
+/* filter section */
+#booking-item {
+    display: none;
+}
+
+#button-item2 {
+    display: none;
+}
+
+#close-btn {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* Booking images Section */
+
+.booking-img-btn {
+    background-color: #49735A;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #49735A;
+    padding: 1px 15px;
+    border-radius: 10px;
+}
+
+.cardbg {
+    background-color: #F2F0F2;
+}
+
+.card-body span {
+    font-size: 14px;
+    color: #181A18;
+}
+
+.card-body {
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
