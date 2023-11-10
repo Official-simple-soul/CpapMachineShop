@@ -1,4 +1,34 @@
 
+$(function () {
+    $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+    }, function (start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+});
+
+
+
+let addBtn = document.querySelector('.addbtn');
+let minusBtn = document.querySelector('.minusbtn');
+let countNum = document.querySelector('.count');
+let defaultCount = 0;
+
+addBtn.addEventListener('click', () => {
+    defaultCount++;
+    countNum.textContent = defaultCount;
+});
+
+minusBtn.addEventListener('click', () => {
+    if(defaultCount > 0) {
+        defaultCount--;
+        countNum.textContent = defaultCount;
+    }
+});
+
+
+
+
 // booking Image section
 let bookingItem = document.getElementById("booking-item");
 let buttonItem = document.getElementById("button-item");
@@ -21,9 +51,10 @@ buttonItem2.addEventListener("click", ()  => {
 // Filter Section
 let list = document.querySelectorAll(".list");
 let filterShow = document.getElementById("filter-show")
+
 list.forEach((select) => {
 select.addEventListener("click", (event) => {
-let selectedItem =  event.target.innerText
+let selectedItem =  event.target.textContent
 console.log(selectedItem)
 
 filterShow.innerHTML = selectedItem;
@@ -31,11 +62,26 @@ filterShow.innerHTML = selectedItem;
 
 });
 
+closeBtn = document.getElementById("close-btn")
 
-closeBtn = document.getElementById("close-btn");
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+        // Remove the content of the filterShow element
+        filterShow.innerHTML = "";
+    });
+}
 
 
-  
+
+
+
+
+
+
+
+
+
+
 
 
 

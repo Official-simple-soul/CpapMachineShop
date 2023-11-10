@@ -64,56 +64,102 @@
                 </div>
             </div>
         </nav>
-        <!-- Top Search Bar will be added eventually after laising with team members to maintain uniformity of the design-->
-
-        <section id="filter-section" data-aos="fade-up" >
-            <div class="container-sm py-4"data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100" >
-                <div class="row gy-5 ">
-                    <div class="col-lg-9 col-md-12 col-12">
-                        <div class="dropdown d-flex justify-content-start align-item-center">
-                            <button class="btn booking-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                More Filters
-                            </button>
-                            <ul class="dropdown-menu border-0">
-                                <li> <a class="dropdown-item list" href="#"> <i
-                                            class=" list fa-solid fa-bed pe-1"></i>Bedroom: 1 2 3 </a></li>
-                                <li><a class="dropdown-item list " href="#"> <i
-                                            class=" list pe-1 fa-solid fa-bath "></i> Bathroom: 1 2 3 </a></li>
-                                <li><a class="dropdown-item list " href="#"> <i
-                                            class=" list pe-1 fa-solid fa-wheelchair"></i>Disabled access </a></li>
-                                <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-car"></i>
-                                        Parking </a></li>
-                                <li><a class="dropdown-item list " href="#"> <i
-                                            class=" list pe-1 fa-solid fa-elevator"></i> Elevator </a></li>
-                                <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-soap"></i>
-                                        Dishwasher</a></li>
-                            </ul>
-                            <div id="filter" class="ps-3 ps-md-5 d-flex justify-content-center align-item-center">
-                                <span id="filter-show" class="d-flex justify-content-center fs-5"> </span>
-                                <div class="ps-5" id="close-btn">&times;</div>
-                            </div>
+    
+<div class="container-sm py-5">
+    <div class="col-12">
+        <div  class="img-input-wrapper position-absolute d-flex justify-content-between align-items-center bg-white">
+                    <div class="d-flex align-items-center input-width">
+                        <i class="fa-solid fa-magnifying-glass px-2"></i>
+                        <input type="text" class="py-2 fw-bold search-input" placeholder="Search">
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <form action="" class="form-group">
+                            <select class="py-2 me-5 fw-bold">
+                                <option value="">Most popular cities</option>
+                                <option value="london">London</option>
+                                <option value="newyork">NewYork</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Calabar">Calabar</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <input type="text" name="daterange" placeholder="move-in" class="py-2 me-5 fw-bold" />
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="d-flex align-items-center place-user-wrapper">
+                            <i class="fa-solid fa-user-group px-2"></i>
+                            <p class="mb-0 px-2 fw-bold">Guest</p>
+                            <button type="button" class="bg-white mx-2 addbtn"><i class="fa-solid fa-plus"></i></button>
+                            <p class="mb-0 px-2 count fw-bold">0</p>
+                            <button type="button" class="bg-white mx-2 minusbtn"><i
+                                    class="fa-solid fa-minus"></i></button>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-8 col-12">
-                        <div class="d-flex drop-p">
-                            <p>Sort By:</p>
-                            <div class="dropdown ps-2">
-                                <p class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <div class="d-none d-lg-block">
+                        <button type="submit" class="hero-search-btn fw-bold">Search</button>
+                    </div>
+                </div>
+            </div>
+ 
+    </div>
+</div>
+<!-- filter -->
+        <section id="filter-section">
+            <div class="container-sm py-5" >
+                <div class="row ">
+                    <div class="col-lg-9">
+                        <div class=" d-none d-lg-block  ">
+                            <div class="dropdown d-flex justify-content-start align-item-center">
+                                <button class="btn booking-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Availability
-                                </p>
+                                    More Filters
+                                </button>
                                 <ul class="dropdown-menu border-0">
-                                    <div class=" ">
-                                        <li><a class="dropdown-item txt-pri-col" href="#">Spa</a></li>
-                                        <li><a class="dropdown-item txt-pri-col" href="#"> Olympic Size Pool </a></li>
-                                        <li><a class="dropdown-item txt-pri-col" href="#"> Suna</a></li>
-                                    </div>
-
+                                    <li> <a class="dropdown-item list" href="#"> <i
+                                                class=" list fa-solid fa-bed pe-1"></i>Bedroom: 1 2 3 </a></li>
+                                    <li><a class="dropdown-item list " href="#"> <i
+                                                class=" list pe-1 fa-solid fa-bath "></i> Bathroom: 1 2 3 </a></li>
+                                    <li><a class="dropdown-item list " href="#"> <i
+                                                class=" list pe-1 fa-solid fa-wheelchair"></i>Disabled access </a></li>
+                                    <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-car"></i>
+                                            Parking </a></li>
+                                    <li><a class="dropdown-item list " href="#"> <i
+                                                class=" list pe-1 fa-solid fa-elevator"></i> Elevator </a></li>
+                                    <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-soap"></i>
+                                            Dishwasher</a></li>
                                 </ul>
+                                <div id="filter" class="ps-3 ps-md-5 d-flex justify-content-center align-item-center">
+                                    <span id="filter-show" class="d-flex justify-content-center fs-5"> </span>
+                                     <div class="ps-5 fs-3" id="close-btn">&times;</div> 
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="d-none d-lg-block">
+                            <div class="d-flex drop-p">
+                                <p>Sort By:</p>
+                                <div class="dropdown ps-2">
+                                    <p class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Availability
+                                    </p>
+                                    <ul class="dropdown-menu border-0">
+                                        <div class=" ">
+                                            <li><a class="dropdown-item txt-pri-col" href="#">Spa</a></li>
+                                            <li><a class="dropdown-item txt-pri-col" href="#"> Olympic Size Pool </a></li>
+                                            <li><a class="dropdown-item txt-pri-col" href="#"> Suna</a></li>
+                                        </div>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -425,7 +471,7 @@
 
 
                     </div>
-                    <div class="col-lg-4  me-md-auto col-12">
+                    <div class="col-lg-4  me-md-auto col-12 overflow-hidden">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6065492151!2d-0.4312531997427622!3d51.52860699922792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sng!4v1699451698562!5m2!1sen!2sng"
                         width="400" height="620" style="border:0; color: pink;" allowfullscreen="" loading="lazy "
@@ -634,7 +680,104 @@
                 </div>
             </div>
         </section>
-
+        <footer class="container py-5">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div>
+                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                        <div class="ps-3">
+                            <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                            <div class="d-flex">
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <p class="footer-contact">&copy;2021 Flex Living</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="footer-company">
+                                <p>Company</p>
+                                <ul>
+                                    <li class="py-2">
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">About us</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">Our team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-company">
+                                <p>Guest</p>
+                                <ul>
+                                    <li class="py-2">
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">FAQ</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="footer-company">
+                                <p>Privacy</p>
+                                <ul>
+                                    <li class="py-2">
+                                        <a href="" class="nobreak">Tearms of Service</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="" class="nobreak">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-form-wrapper">
+                        <p class="mb-1">Stay up to date</p>
+                        <span class="nobreak">Be the first to know about our newest apartments</span>
+                        <div>
+                            <form class="needs-validation" novalidate>
+                                <div class=" my-4">
+                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Enter email address"
+                                        required>
+                                    <span class="pop"></span>
+                                    <div class="invalid-feedback">
+                                        Please enter your email address!
+                                    </div>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                                <div>
+                                    <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
         <!-- PENDING GLOBAL F00TER -->
         <!-- Footer will be added eventually after styling by develop branch to maintain uniformity -->
 
