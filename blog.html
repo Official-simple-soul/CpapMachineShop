@@ -79,13 +79,51 @@
                 <li class="fw-bold fs-5"><a href="#">Property insights</a></li>
             </ul>
         </div>
-        <div class="one d-flex flex-column">
-            <p class="bg-white p-5 rounded-end-5">
-                <span class="fw-bold fs-1">We rent your property</span>
-                <span>Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis proin fermentum, consectetur
-                    cursus.</span>
 
-            </p>
+        <div id="carouselHero" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="one background-hero d-flex flex-column">
+                        <p class="bg-white p-5 rounded-end-5 sub-hero">
+                            <span class="fw-bold fs-1">We rent your property</span>
+                            <span>Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis proin fermentum,
+                                consectetur
+                                cursus.</span>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="two background-hero d-flex flex-column">
+                        <p class="bg-white p-5 rounded-end-5 sub-hero">
+                            <span class="fw-bold fs-1">We rent your property</span>
+                            <span>Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis proin fermentum,
+                                consectetur
+                                cursus.</span>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="three background-hero d-flex flex-column">
+                        <p class="bg-white p-5 rounded-end-5 sub-hero">
+                            <span class="fw-bold fs-1">We rent your property</span>
+                            <span>Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis proin fermentum,
+                                consectetur
+                                cursus.</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselHero"
+                data-bs-slide="prev">
+                <i class="fa-solid fa-caret-left fs-4"></i>
+            </button>
+            <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselHero"
+                data-bs-slide="next">
+                <i class="fa-solid fa-caret-right fs-4"></i>
+            </button>
         </div>
 
         <div class="list-cont-mobile">
@@ -265,8 +303,10 @@
                 <div class="text-center">
                     <h2 class="text-col fs-1 fw-bold mb-5">Featured posts</h2>
                 </div>
-                <div class="row gy-4 gx-5">
-                    <div class="col-md-6 col-lg-4">
+            </div>
+            <div id="featuredPost">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="card mx-auto rounded-5 rounded-top-circle border-0  post-item">
                             <img src="../assets/images/blog_images/featuredimage-1.jpg" class="card-img-top"
                                 alt="featuredimage-1">
@@ -282,16 +322,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="swiper-slide">
                         <div class="card mx-auto rounded-5 rounded-top-circle border-0  post-item">
                             <img src="../assets/images/blog_images/featuredimage-2.jpg" class="card-img-top"
                                 alt="featuredimage-2">
                             <div class="card-body d-flex flex-column">
-                                <h2 class="card-title pt-4 fs-3 fw-semibold">Feugiat gravida sed sit lacus sagittis
+                                <h2 class="card-title pt-4 fs-3 fw-semibold">Turpis elit in dictum eget eget
                                 </h2>
-                                <p class="card-text fs-6 fw-normal">Neque ipsum mi nisl, id ultricies. Sollicitudin et
-                                    id
-                                    consequat tellus commodo magnis.</p>
+                                <p class="card-text fs-6 fw-normal">Convallis eu vel fames feugiat et venenatis nulla
+                                    ipsum.
+                                </p>
+                                <div class="mb-3 pt-2 mt-auto">
+                                    <i class="fa-solid fa-clock px-2"></i>
+                                    <span class="fw-bold fs-5">1 min read</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mx-auto rounded-5 rounded-top-circle border-0  post-item">
+                            <img src="../assets/images/blog_images/featuredimage-3.jpg" class="card-img-top"
+                                alt="featuredimage-3">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title pt-4 fs-3 fw-semibold">Faucibus egestas ut sit purus ultricies at
+                                    eu
+                                </h2>
+                                <p class="card-text fs-6 fw-normal">Viverra tellus risus lacus commodo urna fringilla
+                                    cursus nulla amet.
+                                </p>
                                 <div class="mb-3 pt-2 mt-auto">
                                     <i class="fa-solid fa-clock px-2"></i>
                                     <span class="fw-bold fs-5">3 min read</span>
@@ -300,17 +359,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="swiper-slide">
                         <div class="card mx-auto rounded-5 rounded-top-circle border-0  post-item">
-                            <img src="../assets/images/blog_images/featuredimage-3.jpg" class="card-img-top"
-                                alt="featuredimage-3">
+                            <img src="../assets/images/blog_images/featuredimage-4.jpg" class="card-img-top"
+                                alt="featuredimage-4">
                             <div class="card-body d-flex flex-column">
-                                <h2 class="card-title pt-4 fs-3 fw-semibold">Aliquam id ullamcorper eu </h2>
-                                <p class="card-text fs-6 fw-normal">Id imperdiet sem nec id nulla purus leo risus. Risus
-                                    tincidunt ultrices id ultricies vitae. </p>
+                                <h2 class="card-title pt-4 fs-3 fw-semibold">Feugiat gravida sed sit lacus sagittis
+                                </h2>
+                                <p class="card-text fs-6 fw-normal">Pellentesque ultrices hendrerit lacus lectus.
+                                </p>
                                 <div class="mb-3 pt-2 mt-auto">
                                     <i class="fa-solid fa-clock px-2"></i>
-                                    <span class="fw-bold fs-5">2 min read</span>
+                                    <span class="fw-bold fs-5">3 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card mx-auto rounded-5 rounded-top-circle border-0  post-item">
+                            <img src="../assets/images/blog_images/featuredimage-5.jpg" class="card-img-top"
+                                alt="featuredimage-5">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title pt-4 fs-3 fw-semibold">Feugiat gravida sed sit lacus sagittis
+                                </h2>
+                                <p class="card-text fs-6 fw-normal">Dolor elit viverra facilisis aliquam, aliquet arcu
+                                    nec.
+                                </p>
+                                <div class="mb-3 pt-2 mt-auto">
+                                    <i class="fa-solid fa-clock px-2"></i>
+                                    <span class="fw-bold fs-5">3 min read</span>
                                 </div>
 
                             </div>
@@ -320,6 +397,104 @@
             </div>
         </section>
     </main>
+
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <div>
+                    <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                    <div class="ps-3">
+                        <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                        <div class="d-flex">
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="footer-contact">&copy;2021 Flex Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="footer-company">
+                            <p>Company</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">About us</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-company">
+                            <p>Guest</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="">Blog</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-company">
+                            <p>Privacy</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Tearms of Service</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-form-wrapper">
+                    <p class="mb-1">Stay up to date</p>
+                    <span class="nobreak">Be the first to know about our newest apartments</span>
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <div class=" my-4">
+                                <input type="email" class="" id="validationCustom01" placeholder="Enter email address"
+                                    required>
+                                <span class="pop"></span>
+                                <div class="invalid-feedback">
+                                    Please enter your email address!
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div>
+                                <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -332,10 +507,11 @@
             easing: 'ease-in-out',
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    <script src="./js/homepage.js"></script>
+    <script src="./js/blog.js"></script>
 </body>
 
 </html>
