@@ -20,8 +20,7 @@
     color: var(--primary);
 }
 
-.blog-page .one {
-    background-image: url(../assets/images/blog_images/red-bus.jpg);
+.blog-page .background-hero{
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -29,7 +28,19 @@
     background-repeat: no-repeat;
 }
 
-.blog-page .one p {
+.blog-page .one {
+    background-image: url(../assets/images/blog_images/red-bus.jpg);
+}
+
+.blog-page .two {
+    background-image: url(../assets/images/blog_images/hotel-1.jpg);
+}
+
+.blog-page .three {
+    background-image: url(../assets/images/blog_images/hotel-2.jpg);
+}
+
+.blog-page  .sub-hero {
     width: 490px;
     display: flex;
     flex-direction: column;
@@ -65,6 +76,40 @@
     overflow: auto;
     display: none;
 } 
+
+.blog-page .post-item .card-body {
+    height: 250px;
+}
+
+.blog-page .post-item .card-img-top {
+    height: 300px;
+}
+
+#featuredPost {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel-control {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    background-color: #FFFFFFCC;
+    border-radius: 12px;
+    opacity: 1;
+    color: black;
+    top: unset;
+}
+
+.carousel-control-prev {
+    left: 80px;
+}
+       
+
+.carousel-control-next {
+    right: 80px;
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -109,7 +154,7 @@
         background-repeat: no-repeat;
     }
 
-    .blog-page .one p {
+    .blog-page .sub-hero {
         width: 350px;
         margin-top: 40px;
         margin-bottom: 0;
