@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.btn-success {
+    background-color: #064749 !important;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 9px 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.btn-primary {
+    background-color: #064749 !important;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 9px 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.checkbtn {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 3px solid #F2F0F2 !important;
+    border-radius: 50% !important;
+    outline: none !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
+    background-color: #F2F0F2 !important;
+}
+.checkbtn:focus {
+    background-color: #033638 !important;
+}
+
+/*footer section */
+
+.footer-contact {
+    color: var(--Text, #181A18);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-company {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.footer-company ul {
+    padding-left: 0px;
+}
+
+.footer-company ul li {
+    list-style-type: none;
+}
+
+.footer-company ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Text, #181A18);
+    line-height: 24px;
+}
+
+.footer-form-wrapper .foot-p {
+    color: var(--Text, #181A18);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer-form-wrapper span {
+    color: var(--Text, #181A18);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer-form-wrapper input {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    padding: 12px 40px;
+    background: var(--BG, #F2F0F2);
+    outline: none;
+}
+
+.nobreak {
+    white-space: nowrap;
+}
+.text-success {
+    color: #064749 !important;
+}
+::placeholder {
+    color: #49735A !important;
+}
+
+/*end about footer*/
+
+.form-control {
+    box-shadow: none !important;
+    background-color: #F2F0F2 !important;
+    color: #49735A !important;
+    border: none !important;
+}
+
