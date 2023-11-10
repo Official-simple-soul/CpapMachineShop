@@ -1,0 +1,12 @@
+@import url('./components.css');
+
+.signup-page .form-container {
+    padding: 50px 16px;
+}
+
+@media (min-width: 1024px) {
+    .signup-page .form-container {
+        padding: 100px 16px;
+    }
+    
+}
