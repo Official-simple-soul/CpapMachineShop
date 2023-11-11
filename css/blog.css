@@ -1,0 +1,170 @@
+@import url('./components.css');
+
+:root {
+    --primary: #181A18 ;
+    --secondary: #E2F1E8;
+    --tertiary: #064749;
+}
+
+.blog-page h1 {
+    width: 15%;
+    color: var(--primary);
+}
+
+.blog-page .list {
+    width: 60%;
+    list-style: none;
+    display: flex;
+}
+
+.blog-page .list a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.blog-page .background-hero{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+.blog-page .one {
+    background-image: url(../assets/images/blog_images/red-bus.jpg);
+}
+
+.blog-page .two {
+    background-image: url(../assets/images/blog_images/hotel-1.jpg);
+}
+
+.blog-page .three {
+    background-image: url(../assets/images/blog_images/hotel-2.jpg);
+}
+
+.blog-page  .sub-hero {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.blog-page .section-1 {
+    margin: 80px 0 10px 0;
+}
+
+.post-tag {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.blog-page .post-item .post-tag {
+    margin-top: -34px;
+}
+
+.blog-page .post-item {
+    background: #F2F0F2;
+    height: 100%;
+}
+
+.blog-page .bg-col {
+    background-color: var(--tertiary) !important;
+}
+
+.blog-page .list-cont-mobile {
+    overflow: auto;
+    display: none;
+} 
+
+.blog-page .post-item .card-body {
+    height: 250px;
+}
+
+.blog-page .post-item .card-img-top {
+    height: 300px;
+}
+
+#featuredPost {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel-control {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    background-color: #FFFFFFCC;
+    border-radius: 12px;
+    opacity: 1;
+    color: black;
+    top: unset;
+}
+
+.carousel-control-prev {
+    left: 80px;
+}
+       
+
+.carousel-control-next {
+    right: 80px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .blog-page h1 {
+        width: 30%;
+    } 
+
+    .blog-page .list {
+        padding-left: 0 !important;
+        display: flex;
+        min-width: max-content;
+        gap: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+    .blog-page h1 {
+        width: 50%;
+    }
+
+    .blog-page .list-mobile {
+        gap: 15px;
+        min-width: max-content;
+
+    }
+
+    .blog-page .list-cont-mobile {
+        display: block;
+    }
+
+    .blog-page .list-desktop {
+        display: none;
+    }
+
+    .blog-page .one {
+        background-image: url(../assets/images/blog_images/red-bus2.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+    }
+
+    .blog-page .sub-hero {
+        width: 350px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    
+    }
+
+    .blog-page .section-1 {
+        margin: 0;
+        padding-top: 3px;
+    }
+}

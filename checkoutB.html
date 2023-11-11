@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex Living</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!---------------bootstrap-cdn---------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--google font Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!---->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!--css-->
+    <link rel="stylesheet" href="./css/checkoutB.css">
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100">
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid overflow-hidden">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="#">Landlords</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./contactpage.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="./signup.html">
+                            <button type="button" class=" btn btn-primary">Sign In</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!----------------Navigation-end---------------->
+    </header>
+    <main>
+        <div class="container py-5">
+            <div class="row gy-5">
+                <div class="col-lg-5">
+                    <h1 class="fw-bold mb-5">Guest details</h1>
+                    <form class="form-group row gy-4">
+                        <div>
+                            <input type="text" class="form-control firstNameInput" placeholder="First name">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control lastNameInput" placeholder="Last name">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="tel" class="form-control" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <h4 class="fw-bold my-4">Purpose of stay</h4>
+                            <div>
+                                <div class="d-flex my-2">
+                                    <input type="checkbox" class="checkbtn">
+                                    <p class="mb-0 fw-bold ps-3">Business Travel/ Work</p>
+                                </div>
+                                <div class="d-flex my-2">
+                                    <input type="checkbox" class="checkbtn">
+                                    <p class="mb-0 fw-bold ps-3">Moving to this city or country</p>
+                                </div>
+                                <div class="d-flex my-2">
+                                    <input type="checkbox" class="checkbtn">
+                                    <p class="mb-0 fw-bold ps-3">Holiday</p>
+                                </div>
+                                <div class="d-flex my-2">
+                                    <input type="checkbox" class="checkbtn">
+                                    <p class="mb-0 fw-bold ps-3">Other</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Enter other">
+                        </div>
+                        <div class="d-flex mt-5">
+                            <input type="checkbox">
+                            <p class="mb-0 ps-3">I’m booking on behalf of someone else</p>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Email of guest">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-7">
+                    <div class="d-flex justify-content-end checkout-img-wrapper">
+                        <img src="./assets/images/Checkout_B_images/checkout-img1.png" alt="" class="checkout-img">
+                    </div>
+                    <div class=" d-flex justify-content-end bg-card">
+                        <div class="card check-pros px-2 py-4 p-md-4">
+                            <div class="row gx-5">
+                                <div class="col-lg-5 text-center text-lg-start col-6">
+                                    <label for="" class="fw-bold mb-2">move in</label>
+                                    <input type="date" class="w-100 inputdate">
+                                </div>
+                                <div class="col-lg-5 text-center text-lg-end col-6">
+                                    <label for="" class="fw-bold mb-2">move out</label>
+                                    <input type="date" class="w-100 inputdate">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start my-4">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p class="px-4 mb-0 fw-bold">Guest</p>
+                                <p class="mb-0 fw-bold">1</p>
+                            </div>
+                            <p class="lit text-lg-start text-center">All utilities are included</p>
+                            <div class="d-none d-lg-block">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <p class="lit">Average monthy rent</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-end lit mb-0">£3700</p>
+                                        <p class="text-end lit-sm">incl. VAT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block">
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <div class="d-flex">
+                                            <p class="mb-0 fw-bold pe-2 lit">Pay upon booking</p>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path
+                                                        d="M10.0003 1.6665C8.35215 1.6665 6.74099 2.15525 5.37058 3.07092C4.00017 3.9866 2.93206 5.28809 2.30133 6.81081C1.6706 8.33353 1.50558 10.0091 1.82712 11.6256C2.14866 13.2421 2.94234 14.727 4.10777 15.8924C5.27321 17.0578 6.75807 17.8515 8.37458 18.173C9.99109 18.4946 11.6666 18.3296 13.1894 17.6988C14.7121 17.0681 16.0136 16 16.9292 14.6296C17.8449 13.2592 18.3337 11.648 18.3337 9.99984C18.3337 8.90549 18.1181 7.82186 17.6993 6.81081C17.2805 5.79976 16.6667 4.8811 15.8929 4.10728C15.1191 3.33346 14.2004 2.71963 13.1894 2.30084C12.1783 1.88205 11.0947 1.6665 10.0003 1.6665ZM10.0003 14.1665C9.83551 14.1665 9.67439 14.1176 9.53735 14.0261C9.40031 13.9345 9.2935 13.8043 9.23043 13.6521C9.16736 13.4998 9.15085 13.3322 9.18301 13.1706C9.21516 13.0089 9.29453 12.8605 9.41107 12.7439C9.52762 12.6274 9.6761 12.548 9.83775 12.5159C9.9994 12.4837 10.167 12.5002 10.3192 12.5633C10.4715 12.6263 10.6017 12.7332 10.6932 12.8702C10.7848 13.0072 10.8337 13.1684 10.8337 13.3332C10.8337 13.5542 10.7459 13.7661 10.5896 13.9224C10.4333 14.0787 10.2213 14.1665 10.0003 14.1665ZM10.8337 10.8332C10.8337 11.0542 10.7459 11.2661 10.5896 11.4224C10.4333 11.5787 10.2213 11.6665 10.0003 11.6665C9.77932 11.6665 9.56735 11.5787 9.41107 11.4224C9.25479 11.2661 9.167 11.0542 9.167 10.8332V6.6665C9.167 6.44549 9.25479 6.23353 9.41107 6.07725C9.56735 5.92097 9.77932 5.83317 10.0003 5.83317C10.2213 5.83317 10.4333 5.92097 10.5896 6.07725C10.7459 6.23353 10.8337 6.44549 10.8337 6.6665V10.8332Z"
+                                                        fill="#181A18" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <p class="mb-0 fw-bold lit text-end">£3989.23</p>
+                                        <p class="lit-sm text-end">incl. VAT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-none d-lg-block">
+                                <div class="col-6">
+                                    <div class="d-flex">
+                                        <div>
+                                            <p class=" mb-1 lit pe-2">Total costs</p>
+                                            <p class="lit-sm text-success">Show more</p>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M10.0003 1.6665C8.35215 1.6665 6.74099 2.15525 5.37058 3.07092C4.00017 3.9866 2.93206 5.28809 2.30133 6.81081C1.6706 8.33353 1.50558 10.0091 1.82712 11.6256C2.14866 13.2421 2.94234 14.727 4.10777 15.8924C5.27321 17.0578 6.75807 17.8515 8.37458 18.173C9.99109 18.4946 11.6666 18.3296 13.1894 17.6988C14.7121 17.0681 16.0136 16 16.9292 14.6296C17.8449 13.2592 18.3337 11.648 18.3337 9.99984C18.3337 8.90549 18.1181 7.82186 17.6993 6.81081C17.2805 5.79976 16.6667 4.8811 15.8929 4.10728C15.1191 3.33346 14.2004 2.71963 13.1894 2.30084C12.1783 1.88205 11.0947 1.6665 10.0003 1.6665ZM10.0003 14.1665C9.83551 14.1665 9.67439 14.1176 9.53735 14.0261C9.40031 13.9345 9.2935 13.8043 9.23043 13.6521C9.16736 13.4998 9.15085 13.3322 9.18301 13.1706C9.21516 13.0089 9.29453 12.8605 9.41107 12.7439C9.52762 12.6274 9.6761 12.548 9.83775 12.5159C9.9994 12.4837 10.167 12.5002 10.3192 12.5633C10.4715 12.6263 10.6017 12.7332 10.6932 12.8702C10.7848 13.0072 10.8337 13.1684 10.8337 13.3332C10.8337 13.5542 10.7459 13.7661 10.5896 13.9224C10.4333 14.0787 10.2213 14.1665 10.0003 14.1665ZM10.8337 10.8332C10.8337 11.0542 10.7459 11.2661 10.5896 11.4224C10.4333 11.5787 10.2213 11.6665 10.0003 11.6665C9.77932 11.6665 9.56735 11.5787 9.41107 11.4224C9.25479 11.2661 9.167 11.0542 9.167 10.8332V6.6665C9.167 6.44549 9.25479 6.23353 9.41107 6.07725C9.56735 5.92097 9.77932 5.83317 10.0003 5.83317C10.2213 5.83317 10.4333 5.92097 10.5896 6.07725C10.7459 6.23353 10.8337 6.44549 10.8337 6.6665V10.8332Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="fw-bold lit text-center text-lg-start">Payment timeline</p>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="77"
+                                                    viewBox="0 0 13 77" fill="none">
+                                                    <line x1="6.5" y1="4" x2="6.5" y2="64" stroke="#181A18" />
+                                                    <circle cx="6.5" cy="6.5" r="6.5" fill="#181A18" />
+                                                    <circle cx="6.5" cy="70.5" r="6.5" fill="#181A18" />
+                                                </svg>
+                                            </div>
+                                            <div class="ps-3">
+                                                <p class="lit mb-1">Reserve this apaptment</p>
+                                                <p class="lit-sm">Due now</p>
+                                                <p class="lit">After move-out</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-end mb-0">£4001.70</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex ps-4">
+                                <p class="mb-0 pe-2">Receive your £400.00 deposit back within 30 days</p>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M10.0003 1.6665C8.35215 1.6665 6.74099 2.15525 5.37058 3.07092C4.00017 3.9866 2.93206 5.28809 2.30133 6.81081C1.6706 8.33353 1.50558 10.0091 1.82712 11.6256C2.14866 13.2421 2.94234 14.727 4.10777 15.8924C5.27321 17.0578 6.75807 17.8515 8.37458 18.173C9.99109 18.4946 11.6666 18.3296 13.1894 17.6988C14.7121 17.0681 16.0136 16 16.9292 14.6296C17.8449 13.2592 18.3337 11.648 18.3337 9.99984C18.3337 8.90549 18.1181 7.82186 17.6993 6.81081C17.2805 5.79976 16.6667 4.8811 15.8929 4.10728C15.1191 3.33346 14.2004 2.71963 13.1894 2.30084C12.1783 1.88205 11.0947 1.6665 10.0003 1.6665ZM10.0003 14.1665C9.83551 14.1665 9.67439 14.1176 9.53735 14.0261C9.40031 13.9345 9.2935 13.8043 9.23043 13.6521C9.16736 13.4998 9.15085 13.3322 9.18301 13.1706C9.21516 13.0089 9.29453 12.8605 9.41107 12.7439C9.52762 12.6274 9.6761 12.548 9.83775 12.5159C9.9994 12.4837 10.167 12.5002 10.3192 12.5633C10.4715 12.6263 10.6017 12.7332 10.6932 12.8702C10.7848 13.0072 10.8337 13.1684 10.8337 13.3332C10.8337 13.5542 10.7459 13.7661 10.5896 13.9224C10.4333 14.0787 10.2213 14.1665 10.0003 14.1665ZM10.8337 10.8332C10.8337 11.0542 10.7459 11.2661 10.5896 11.4224C10.4333 11.5787 10.2213 11.6665 10.0003 11.6665C9.77932 11.6665 9.56735 11.5787 9.41107 11.4224C9.25479 11.2661 9.167 11.0542 9.167 10.8332V6.6665C9.167 6.44549 9.25479 6.23353 9.41107 6.07725C9.56735 5.92097 9.77932 5.83317 10.0003 5.83317C10.2213 5.83317 10.4333 5.92097 10.5896 6.07725C10.7459 6.23353 10.8337 6.44549 10.8337 6.6665V10.8332Z"
+                                            fill="#181A18" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 mt-5">
+                <h2 class="fw-bold text-center text-md-start">Payment method</h2>
+                <div>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-lg-5 my-5">
+                            <select class="form-select form-control" id="selectfield" required>
+                                <option selected disabled value="">Select payment method</option>
+                                <option value="card">Card</option>
+                                <option value="bank_transfer">Bank transfer</option>
+                            </select>
+                            <span class="text-danger">select a payment method to book*</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <p class="lit-sm">By clicking "Book" below, I have read and agreed to the <a href="#"
+                                        class="link">key contract terms,cancellation policy and apartment & building
+                                        rules ,</a> and to pay the total amount shown.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <button type="button" class="btn-success d-flex align-items-center" id="openModalBtn">
+                                Book
+                                <div class="load ms-3"></div>
+                            </button>
+                        </div>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content mx-auto">
+                                <div class="p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="circle">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                                viewBox="0 0 60 60" fill="none">
+                                                <path
+                                                    d="M24.6502 45.0003C24.3074 44.9992 23.9685 44.9276 23.6546 44.79C23.3406 44.6523 23.0583 44.4516 22.8252 44.2003L10.6752 31.2753C10.221 30.7912 9.97773 30.1466 9.99882 29.4832C10.0199 28.8198 10.3037 28.1919 10.7877 27.7378C11.2717 27.2836 11.9164 27.0403 12.5798 27.0614C13.2432 27.0825 13.871 27.3662 14.3252 27.8503L24.6252 38.8253L45.6502 15.8253C45.8636 15.5596 46.129 15.3403 46.4302 15.1809C46.7314 15.0215 47.062 14.9254 47.4017 14.8985C47.7414 14.8715 48.083 14.9143 48.4056 15.0241C48.7281 15.134 49.0248 15.3087 49.2774 15.5374C49.53 15.7661 49.7332 16.044 49.8745 16.3541C50.0158 16.6642 50.0922 16.9999 50.099 17.3406C50.1058 17.6813 50.0429 18.0198 49.9141 18.3353C49.7854 18.6508 49.5935 18.9366 49.3502 19.1753L26.5002 44.1753C26.2693 44.4312 25.988 44.6365 25.6739 44.7785C25.3599 44.9205 25.0198 44.996 24.6752 45.0003H24.6502Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="fw-bold text-center my-4">Congratulations!<span class="input-name"></span>Your booking in London is confirmed.</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="./checkoutpageB_2.html">
+                                            <button type="button" class="btn-success">Edit booking details</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                    </div>
+                    <div class="ps-lg-3 d-none d-md-block">
+                        <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                        <div class="d-flex">
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="footer-contact">&copy;2021 Flex Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row gy-4">
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Company</p>
+                            <ul class="">
+                                <li class="py-2">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">About us</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Guest</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Privacy</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Tearms of Service</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-form-wrapper">
+                    <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                    <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <div class=" my-4">
+                                <input type="email" class="form-control" id="validationCustom01"
+                                    placeholder="Enter email address" required>
+                                <span class="pop"></span>
+                                <div class="invalid-feedback">
+                                    Please enter your email address!
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-lg-3 d-block d-md-none">
+                <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-linkedin-in fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-facebook-f fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-twitter fs-4"></i>
+                    </a>
+                </div>
+                <div class="mt-2">
+                    <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="./js/checkoutB.js"></script>
+</body>
+
+</html>
