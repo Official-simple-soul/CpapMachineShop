@@ -324,10 +324,10 @@ h6 {
 
 
 @media screen and (max-width: 425px) {
+    /* first-section */
     .form-container{
         transform: translateY(-33%);
-        width: 56%;
-        
+        width: 56%;   
     }
 
     .card{
@@ -340,6 +340,11 @@ h6 {
         display: block;
 
     }
+    .card-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
     .high{
         width: 100%;
     }
@@ -352,31 +357,22 @@ h6 {
         padding-right: 12px;
     }
 
-     /* .work{
-        display: block !important;
-     } */
+     /* fifth-section */
     .two-tone-card {
         width: 100%;
         height: auto; 
-        margin-bottom: 20px; 
-        
+        margin-bottom: 20px;  
     }
     .separator-image {
         max-width: 100%; 
         margin: 0; 
     }
-
-    .card-section {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
+    
     .two-tone-card .upper-half,
     .two-tone-card .lower-half {
         width: 100%; 
         border-radius: 0; 
     }
-
     .upper-half{
         height: 30%; 
     }
