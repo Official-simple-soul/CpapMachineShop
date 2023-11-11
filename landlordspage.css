@@ -242,7 +242,15 @@ h6 {
         padding-left: 12px;
         padding-right: 12px;
     }
-    
+
+    /* .line{
+        justify-content: flex-start;
+    }
+     */
+
+     .work{
+        display: block !important;
+     }
     .two-tone-card {
         width: 100%;
         height: auto; /* Set height to auto for responsiveness */
