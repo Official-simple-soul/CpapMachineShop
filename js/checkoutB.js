@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastName = document.querySelector('.lastNameInput');
     let textFirstName = document.querySelector('.input-name');
     openModalBtn.disabled = true;
+    openModalBtn.style.cursor = "not-allowed";
 
 
     selectField.addEventListener('change', () => {
         if (selectField.value != "") {
             openModalBtn.disabled = false;
+            openModalBtn.style.cursor = "pointer";
             errorMessage.style.display = "none";
         }
     })
