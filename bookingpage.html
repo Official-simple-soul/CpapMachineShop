@@ -34,7 +34,7 @@
     <!--css-->
     <link rel="stylesheet" href="./css/bookingpage.css">
 </head>
-
+<!-- navigation -->
 <body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100">
     <header id="header">
         <nav class="navbar navbar-expand-lg container-fluid">
@@ -64,10 +64,11 @@
                 </div>
             </div>
         </nav>
-    
-<div class="container-sm py-5">
-    <div class="col-12">
-        <div  class="img-input-wrapper position-absolute d-flex justify-content-between align-items-center bg-white">
+<!-- filter Button -->
+        <div class="container-sm py-5">
+            <div class="col-12">
+                <div
+                    class="img-input-wrapper position-absolute d-flex justify-content-between align-items-center bg-white">
                     <div class="d-flex align-items-center input-width">
                         <i class="fa-solid fa-magnifying-glass px-2"></i>
                         <input type="text" class="py-2 fw-bold search-input" placeholder="Search">
@@ -101,15 +102,15 @@
                     </div>
                 </div>
             </div>
- 
-    </div>
-</div>
-<!-- filter -->
+
+        </div>
+        </div>
+        <!-- filter -->
         <section id="filter-section">
-            <div class="container-sm py-5" >
+            <div class="container-sm py-4">
                 <div class="row ">
-                    <div class="col-lg-9">
-                        <div class=" d-none d-lg-block  ">
+                    <div class="col-lg-8">
+                        <div class="  d-lg-block d-none">
                             <div class="dropdown d-flex justify-content-start align-item-center">
                                 <button class="btn booking-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -122,21 +123,23 @@
                                                 class=" list pe-1 fa-solid fa-bath "></i> Bathroom: 1 2 3 </a></li>
                                     <li><a class="dropdown-item list " href="#"> <i
                                                 class=" list pe-1 fa-solid fa-wheelchair"></i>Disabled access </a></li>
-                                    <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-car"></i>
+                                    <li><a class="dropdown-item list " href="#"> <i
+                                                class=" list pe-1 fa-solid fa-car"></i>
                                             Parking </a></li>
                                     <li><a class="dropdown-item list " href="#"> <i
                                                 class=" list pe-1 fa-solid fa-elevator"></i> Elevator </a></li>
-                                    <li><a class="dropdown-item list " href="#"> <i class=" list pe-1 fa-solid fa-soap"></i>
+                                    <li><a class="dropdown-item list " href="#"> <i
+                                                class=" list pe-1 fa-solid fa-soap"></i>
                                             Dishwasher</a></li>
                                 </ul>
                                 <div id="filter" class="ps-3 ps-md-5 d-flex justify-content-center align-item-center">
                                     <span id="filter-show" class="d-flex justify-content-center fs-5"> </span>
-                                     <div class="ps-5 fs-3" id="close-btn">&times;</div> 
+                                    <div class="ps-5 fs-3" id="close-btn">&times;</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3">
                         <div class="d-none d-lg-block">
                             <div class="d-flex drop-p">
@@ -149,35 +152,37 @@
                                     <ul class="dropdown-menu border-0">
                                         <div class=" ">
                                             <li><a class="dropdown-item txt-pri-col" href="#">Spa</a></li>
-                                            <li><a class="dropdown-item txt-pri-col" href="#"> Olympic Size Pool </a></li>
+                                            <li><a class="dropdown-item txt-pri-col" href="#"> Olympic Size Pool </a>
+                                            </li>
                                             <li><a class="dropdown-item txt-pri-col" href="#"> Suna</a></li>
                                         </div>
-    
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    
+
                 </div>
             </div>
         </section>
+        <!-- Booking Image -->
         <section id="booking-images">
-            <div class="container-sm py-5" data-aos="fade-up"
-            data-aos-duration="1000">
-                <div class="row  gy-2">
+            <div class="container-sm py-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row   gy-4  overflow-hidden">
                     <div class="col-lg-8">
-                        <div class="card  border-0 " style="max-width: 700px;" >
+                        <div class="card  border-0 " style="max-width: 700px;">
                             <div class="row g-0">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-12">
                                     <img src="./assets/images/booking_page_images/Booking-1.png " class="img-fluid "
                                         alt="holla">
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-sm-12">
                                     <div class="card-body cardbg ">
-                                        <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                        <div class=" d-flex mt-2">
+                                        <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                        </p>
+                                        <div class=" d-flex mt-2 collective-span ">
                                             <div class="d-flex justify-content-center ">
                                                 <box-icon type='solid' name='bed'></box-icon>
                                                 <span class="ps-1">1 Bedroom </span>
@@ -191,16 +196,19 @@
                                                 <span class="ps-1"> Wifi </span>
                                             </div>
                                         </div>
-                                        <span class="card-title mt-2 ps-2"> City view </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                        <span class="card-title mt-2 ps-2"> |</span>
-                                        <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                        <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker1')">Available Dates</button>
-                                        <input type="date" id="datePicker1" class="mt-1" style="display: none;">            
-                                        <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                        <div class="">
+                                            <span class=" mt-2 ps-1"> City view </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> Elevetor </span>
+                                            <span class=" mt-2 ps-2"> |</span>
+                                            <span class=" mt-2 ps-2"> Parking </span> <br>
+                                        </div>
+                                        <button class="booking-img-btn mt-1"
+                                            onclick="toggleDatePicker('datePicker1')">Available Dates</button>
+                                        <input type="date" id="datePicker1" class="mt-1" style="display: none;">
+                                        <span class="ms-1 fs-5 font-change">From <b>$3490</b> /month</span>
                                     </div>
                                 </div>
                             </div>
@@ -213,8 +221,9 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
-                                        <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                        <div class=" d-flex mt-2">
+                                        <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                        </p>
+                                        <div class=" d-flex mt-2 collective-span">
                                             <div class="d-flex justify-content-center ">
                                                 <box-icon type='solid' name='bed'></box-icon>
                                                 <span class="ps-1">1 Bedroom </span>
@@ -228,16 +237,17 @@
                                                 <span class="ps-1"> Wifi </span>
                                             </div>
                                         </div>
-                                        <span class="card-title mt-2 ps-2"> City view </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                        <span class="card-title mt-2 ps-2"> |</span>
-                                        <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                        <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker2')">Available Dates</button>
+                                        <span class=" mt-2 ps-1"> City view </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> Elevetor </span>
+                                        <span class=" mt-2 ps-2"> |</span>
+                                        <span class=" mt-2 ps-2"> Parking </span> <br>
+                                        <button class="booking-img-btn mt-1"
+                                            onclick="toggleDatePicker('datePicker2')">Available Dates</button>
                                         <input type="date" id="datePicker2" class="mt-1" style="display: none;">
-                                        <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                        <span class="ms-1 fs-5 font-change ">From <b>$3490</b> /month</span>
                                     </div>
                                 </div>
                             </div>
@@ -250,8 +260,9 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
-                                        <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                        <div class=" d-flex mt-2">
+                                        <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                        </p>
+                                        <div class=" d-flex mt-2 collective-span">
                                             <div class="d-flex justify-content-center ">
                                                 <box-icon type='solid' name='bed'></box-icon>
                                                 <span class="ps-1">1 Bedroom </span>
@@ -265,17 +276,18 @@
                                                 <span class="ps-1"> Wifi </span>
                                             </div>
                                         </div>
-                                        <span class="card-title mt-2 ps-2"> City view </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                        <span class="card-title mt-2 ps-2"> |</span>
-                                        <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                        <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker3')">Available Dates</button>
+                                        <span class=" mt-2 ps-1"> City view </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> Elevetor </span>
+                                        <span class=" mt-2 ps-2"> |</span>
+                                        <span class=" mt-2 ps-2"> Parking </span> <br>
+                                        <button class="booking-img-btn mt-1"
+                                            onclick="toggleDatePicker('datePicker3')">Available Dates</button>
                                         <input type="date" id="datePicker3" class="mt-1" style="display: none;">
-                    
-                                        <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+
+                                        <span class="ms-1 fs-5 font-change ">From <b>$3490</b> /month</span>
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +300,9 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
-                                        <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                        <div class=" d-flex mt-2">
+                                        <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                        </p>
+                                        <div class=" d-flex mt-2 collective-span">
                                             <div class="d-flex justify-content-center ">
                                                 <box-icon type='solid' name='bed'></box-icon>
                                                 <span class="ps-1">1 Bedroom </span>
@@ -303,16 +316,17 @@
                                                 <span class="ps-1"> Wifi </span>
                                             </div>
                                         </div>
-                                        <span class="card-title mt-2 ps-2"> City view </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                        <span class="card-title mt-2 ps-2"> | </span>
-                                        <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                        <span class="card-title mt-2 ps-2"> |</span>
-                                        <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                        <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker4')">Available Dates</button>
+                                        <span class=" mt-2 ps-1"> City view </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                        <span class=" mt-2 ps-2"> | </span>
+                                        <span class=" mt-2 ps-2"> Elevetor </span>
+                                        <span class=" mt-2 ps-2"> |</span>
+                                        <span class=" mt-2 ps-2"> Parking </span> <br>
+                                        <button class="booking-img-btn mt-1"
+                                            onclick="toggleDatePicker('datePicker4')">Available Dates</button>
                                         <input type="date" id="datePicker4" class="mt-1" style="display: none;">
-                                        <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                        <span class="ms-1 fs-5 font-change ">From <b>$3490</b> /month</span>
                                     </div>
                                 </div>
                             </div>
@@ -326,8 +340,9 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
-                                            <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                            <div class=" d-flex mt-2">
+                                            <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                            </p>
+                                            <div class=" d-flex mt-2 collective-span">
                                                 <div class="d-flex justify-content-center ">
                                                     <box-icon type='solid' name='bed'></box-icon>
                                                     <span class="ps-1">1 Bedroom </span>
@@ -341,16 +356,17 @@
                                                     <span class="ps-1"> Wifi </span>
                                                 </div>
                                             </div>
-                                            <span class="card-title mt-2 ps-2"> City view </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                            <span class="card-title mt-2 ps-2"> |</span>
-                                            <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                            <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker5')">Available Dates</button>
-                                            <input type="date" id="datePicker5" class="mt-1" style="display: none;">                     
-                                            <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                            <span class=" mt-2 ps-1"> City view </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> Elevetor </span>
+                                            <span class=" mt-2 ps-2"> |</span>
+                                            <span class=" mt-2 ps-2"> Parking </span> <br>
+                                            <button class="booking-img-btn mt-1"
+                                                onclick="toggleDatePicker('datePicker5')">Available Dates</button>
+                                            <input type="date" id="datePicker5" class="mt-1" style="display: none;">
+                                            <span class="ms-1 fs-5 font-change">From <b>$3490</b> /month</span>
                                         </div>
                                     </div>
                                 </div>
@@ -363,8 +379,9 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
-                                            <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                            <div class=" d-flex mt-2">
+                                            <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                            </p>
+                                            <div class=" d-flex mt-2 collective-span">
                                                 <div class="d-flex justify-content-center ">
                                                     <box-icon type='solid' name='bed'></box-icon>
                                                     <span class="ps-1">1 Bedroom </span>
@@ -378,16 +395,17 @@
                                                     <span class="ps-1"> Wifi </span>
                                                 </div>
                                             </div>
-                                            <span class="card-title mt-2 ps-2"> City view </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                            <span class="card-title mt-2 ps-2"> |</span>
-                                            <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                            <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker6')">Available Dates</button>
+                                            <span class="mt-2 ps-1"> City view </span>
+                                            <span class="mt-2 ps-2"> | </span>
+                                            <span class="mt-2 ps-2"> 3rd Floor </span>
+                                            <span class="mt-2 ps-2"> | </span>
+                                            <span class="mt-2 ps-2"> Elevetor </span>
+                                            <span class="mt-2 ps-2"> |</span>
+                                            <span class="mt-2 ps-2"> Parking </span> <br>
+                                            <button class="booking-img-btn mt-1"
+                                                onclick="toggleDatePicker('datePicker6')">Available Dates</button>
                                             <input type="date" id="datePicker6" class="mt-1" style="display: none;">
-                        
+
                                         </div>
                                     </div>
                                 </div>
@@ -400,8 +418,9 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
-                                            <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                            <div class=" d-flex mt-2">
+                                            <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                            </p>
+                                            <div class=" d-flex mt-2 collective-span">
                                                 <div class="d-flex justify-content-center ">
                                                     <box-icon type='solid' name='bed'></box-icon>
                                                     <span class="ps-1">1 Bedroom </span>
@@ -415,16 +434,17 @@
                                                     <span class="ps-1"> Wifi </span>
                                                 </div>
                                             </div>
-                                            <span class="card-title mt-2 ps-2"> City view </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                            <span class="card-title mt-2 ps-2"> |</span>
-                                            <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                            <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker7')">Available Dates</button>
+                                            <span class=" mt-2 ps-1"> City view </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> Elevetor </span>
+                                            <span class=" mt-2 ps-2"> |</span>
+                                            <span class=" mt-2 ps-2"> Parking </span> <br>
+                                            <button class="booking-img-btn mt-1"
+                                                onclick="toggleDatePicker('datePicker7')">Available Dates</button>
                                             <input type="date" id="datePicker7" class="mt-1" style="display: none;">
-                                            <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                            <span class="ms-1 fs-5 font-change">From <b>$3490</b> /month</span>
                                         </div>
                                     </div>
                                 </div>
@@ -437,8 +457,9 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
-                                            <p class="card-title"> Rhoncus suspendisse penatibus mauris, sit non </p>
-                                            <div class=" d-flex mt-2">
+                                            <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
+                                            </p>
+                                            <div class=" d-flex mt-2 collective-span">
                                                 <div class="d-flex justify-content-center ">
                                                     <box-icon type='solid' name='bed'></box-icon>
                                                     <span class="ps-1">1 Bedroom </span>
@@ -452,73 +473,77 @@
                                                     <span class="ps-1"> Wifi </span>
                                                 </div>
                                             </div>
-                                            <span class="card-title mt-2 ps-2"> City view </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> 3rd Floor </span>
-                                            <span class="card-title mt-2 ps-2"> | </span>
-                                            <span class="card-title mt-2 ps-2"> Elevetor </span>
-                                            <span class="card-title mt-2 ps-2"> |</span>
-                                            <span class="card-title mt-2 ps-2"> Parking </span> <br>
-                                            <button class="booking-img-btn mt-1" onclick="toggleDatePicker('datePicker8')">Available Dates</button>
+                                            <span class=" mt-2 ps-1"> City view </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> 3rd Floor </span>
+                                            <span class=" mt-2 ps-2"> | </span>
+                                            <span class=" mt-2 ps-2"> Elevetor </span>
+                                            <span class=" mt-2 ps-2"> |</span>
+                                            <span class=" mt-2 ps-2"> Parking </span> <br>
+                                            <button class="booking-img-btn mt-1"
+                                                onclick="toggleDatePicker('datePicker8')">Available Dates</button>
                                             <input type="date" id="datePicker8" class="mt-1" style="display: none;">
-                                            <span class="ms-1 fs-5">From <b>$3490</b> /month</span>
+                                            <span class="ms-1 fs-5 font-change ">From <b>$3490</b> /month</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
-
                     </div>
-                    <div class="col-lg-4  me-md-auto col-12 overflow-hidden">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6065492151!2d-0.4312531997427622!3d51.52860699922792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sng!4v1699451698562!5m2!1sen!2sng"
-                        width="400" height="620" style="border:0; color: pink;" allowfullscreen="" loading="lazy "
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div class="col-lg-4 overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6065492151!2d-0.4312531997427622!3d51.52860699922792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sng!4v1699451698562!5m2!1sen!2sng"
+                            width="400" height="620" style="border:0; color: pink;" allowfullscreen="" loading="lazy "
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class=" container-sm py-4">
-                    <div class="col-lg-8 ps-5">
+                    <div class="col-lg-4 d-flex justify-content-md-center">
                         <button class="booking-btn my-3 ps-5" id="button-item"> Show More Appointment </button>
                         <button class="booking-btn my-3  ps-5" id="button-item2"> Show less Appointments</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Apartments -->
         <section id="apartments" class="py-5">
-            <div class="container-sm"data-aos="fade-down" >
-                <h2>Apartment for rent in London</h2>
-                <p>A truly global city, London has long been considered a cutting-edge metropolis and hub for culture,
-                    style and finance. With each borough, Tube zone and neighborhood of London sporting its own vibe and
-                    lifestyle advantages, it can be downright difficult to settle on where to look for a furnished
-                    apartment in London . Whether you're a digital nomad looking for a studio apartment in London or
-                    just seeking a month to month rental in London, Blueground has you covered.
-                    With a pub on almost every corner and beautiful parks in all major neighborhoods, you'll feel right
-                    at home across all of Blueground's exquisite London flats.
-                </p>
-                <p> Furnished apartment rentals in London. Getting the most out of living
-                    in London starts with securing a furnished flat for rent. Fortunately,
-                    Blueground's flats for rent across London marry convenient locations close
-                    to public transportation, top notch interiors and modern furnishings, and
-                    support from our local team. Zero in on the ideal serviced apartment in
-                    London from studios to two-bedroom apartments by filtering for your date,
-                    area, and must-have amenities on our site. Moving to London has never been simpler! </p>
+            <div class="container-sm" data-aos="fade-down">
+                <div class="col-lg-12">
+                    <h2 class="fw-bold">Apartment for rent in London</h2>
+                    <p>A truly global city, London has long been considered a cutting-edge metropolis and hub for
+                        culture,
+                        style and finance. With each borough, Tube zone and neighborhood of London sporting its own vibe
+                        and
+                        lifestyle advantages, it can be downright difficult to settle on where to look for a furnished
+                        apartment in London . Whether you're a digital nomad looking for a studio apartment in London or
+                        just seeking a month to month rental in London, Blueground has you covered.
+                        With a pub on almost every corner and beautiful parks in all major neighborhoods, you'll feel
+                        right
+                        at home across all of Blueground's exquisite London flats.
+                    </p>
+                    <p> Furnished apartment rentals in London. Getting the most out of living
+                        in London starts with securing a furnished flat for rent. Fortunately,
+                        Blueground's flats for rent across London marry convenient locations close
+                        to public transportation, top notch interiors and modern furnishings, and
+                        support from our local team. Zero in on the ideal serviced apartment in
+                        London from studios to two-bedroom apartments by filtering for your date,
+                        area, and must-have amenities on our site. Moving to London has never been simpler! </p>
 
-                <p> The choice is yours from Chelsea to Soho to Shoreditch, always within a
-                    short walk from Tube stops and local hangouts. Show up and start living
-                    in your new London accommodation with furnishings and a fully-equipped setup
-                    taken care of before your arrival by the team at Blueground. So book today,
-                    and move in tomorrow so you can enjoy all a Blueground London flat has to offer:
-                    premium work from home setups, a user-friendly guest app service, flexible contracts,
-                    and a booking process free of broker's fees (and stresses!).</p>
-
+                    <p> The choice is yours from Chelsea to Soho to Shoreditch, always within a
+                        short walk from Tube stops and local hangouts. Show up and start living
+                        in your new London accommodation with furnishings and a fully-equipped setup
+                        taken care of before your arrival by the team at Blueground. So book today,
+                        and move in tomorrow so you can enjoy all a Blueground London flat has to offer:
+                        premium work from home setups, a user-friendly guest app service, flexible contracts,
+                        and a booking process free of broker's fees (and stresses!).</p>
+                </div>
             </div>
             <div class="container-sm mb-5">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item  mt-3 border-0 py-1 shadow-sm ">
                         <h1 class="accordion-header">
-                            <button class="accordion-button bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button bg-white fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
                                 Integer morbi semper sodales sit facilisi habitant pulvinar sed venenatis?
@@ -535,7 +560,7 @@
                     </div>
                     <div class="accordion-item  mt-3 border-0  py-1 shadow-sm ">
                         <h2 class="accordion-header">
-                            <button class="accordion-button  bg-white  fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 Massa massa nulla rhoncus a quam consectetur sed purus, enim?
@@ -554,7 +579,7 @@
                     </div>
                     <div class="accordion-item mt-3 border-0  py-1 shadow-sm ">
                         <h2 class="accordion-header">
-                            <button class="accordion-button  bg-white  fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 Dignissim congue rutrum pretium nunc sed nibh vitae tortor ut?
@@ -570,7 +595,7 @@
                     </div>
                     <div class="accordion-item  mt-3 border-0 py-1 shadow-sm">
                         <h2 class="accordion-header">
-                            <button class="accordion-button  bg-white  fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
                                 aria-controls="collapsefour">
                                 Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
@@ -588,7 +613,7 @@
                     </div>
                     <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
                         <h2 class="accordion-header ">
-                            <button class="accordion-button  bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                 aria-controls="collapsefive">
                                 Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
@@ -607,7 +632,7 @@
                     </div>
                     <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
                         <h2 class="accordion-header ">
-                            <button class="accordion-button  bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                 aria-controls="collapsefive">
                                 Est felis a velit at vitae venenatis rhoncus?
@@ -625,7 +650,7 @@
                     </div>
                     <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
                         <h2 class="accordion-header ">
-                            <button class="accordion-button  bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                 aria-controls="collapsefive">
                                 Eget nam accumsan elementum accumsan imperdiet eu, cras?
@@ -643,7 +668,7 @@
                     </div>
                     <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
                         <h2 class="accordion-header ">
-                            <button class="accordion-button  bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white fs-4 fw-bold  collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                 aria-controls="collapsefive">
                                 Fermentum et semper aliquet justo, facilisis?
@@ -661,7 +686,7 @@
                     </div>
                     <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
                         <h2 class="accordion-header ">
-                            <button class="accordion-button  bg-white fs-4 collapsed" type="button"
+                            <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
                                 aria-controls="collapsefive">
                                 semper aliquet justo, facilisis?
@@ -680,12 +705,15 @@
                 </div>
             </div>
         </section>
+        <!-- footer -->
         <footer class="container py-5">
             <div class="row gy-4">
                 <div class="col-lg-3">
                     <div>
-                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
-                        <div class="ps-3">
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                        </div>
+                        <div class="ps-lg-3 d-none d-md-block">
                             <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
                             <div class="d-flex">
                                 <a href="#" class="px-2 text-success">
@@ -705,11 +733,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="footer-company">
+                    <div class="row gy-4">
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
                                 <p>Company</p>
-                                <ul>
+                                <ul class="">
                                     <li class="py-2">
                                         <a href="">Home</a>
                                     </li>
@@ -722,8 +750,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="footer-company">
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
                                 <p>Guest</p>
                                 <ul>
                                     <li class="py-2">
@@ -738,8 +766,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="footer-company">
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
                                 <p>Privacy</p>
                                 <ul>
                                     <li class="py-2">
@@ -755,33 +783,45 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer-form-wrapper">
-                        <p class="mb-1">Stay up to date</p>
-                        <span class="nobreak">Be the first to know about our newest apartments</span>
+                        <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                        <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
                         <div>
                             <form class="needs-validation" novalidate>
                                 <div class=" my-4">
-                                    <input type="email" class="form-control" id="validationCustom01" placeholder="Enter email address"
-                                        required>
+                                    <input type="email" class="form-control" id="validationCustom01"
+                                        placeholder="Enter email address" required>
                                     <span class="pop"></span>
                                     <div class="invalid-feedback">
                                         Please enter your email address!
                                     </div>
                                     <div class="valid-feedback"></div>
                                 </div>
-                                <div>
+                                <div class="d-flex justify-content-center justify-content-md-start">
                                     <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+                <div class="ps-lg-3 d-block d-md-none">
+                    <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-linkedin-in fs-4"></i>
+                        </a>
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-facebook-f fs-4"></i>
+                        </a>
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-twitter fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                    </div>
+                </div>
             </div>
         </footer>
-    
-        <!-- PENDING GLOBAL F00TER -->
-        <!-- Footer will be added eventually after styling by develop branch to maintain uniformity -->
-
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
