@@ -47,27 +47,12 @@
     background-color: #E2F1E8;
 }
 
-.touch {
+.touch, .property, .moving  {
     padding-bottom: 200px;
 }
 
-.property {
-    padding-bottom: 200px;
-}
-
-.chat {
+.chat, .decorate, .relax   {
     padding-top: 200px
-}
-.moving {
-    padding-bottom: 200px;
-}
-
-.decorate {
-    padding-top: 200px;
-}
-
-.relax {
-    padding-top: 150px;
 }
 
 .line{
@@ -103,7 +88,7 @@
 }
 
 .line img {
-    width: 100%; /
+    width: 100%; 
     max-width: 150px; 
 }
 
@@ -138,6 +123,35 @@
     text-align: center;
     padding: 20px;
   }
+ /* fourth-section */
+
+ .room,
+ .col-6 {
+     max-width: 100%;
+ }
+
+ .unsplash {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.before .overlay-image, .after .overlayy-image {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 130px;
+    height: 50px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it appears above the other images */
+}
+
+
+
+
+
 
   /* fifth-section */
 
@@ -210,24 +224,58 @@ h6 {
     .card{
         margin-bottom: 18px;
     }
-
-    .card-section{
-        display: block;
+    .part{
+        margin-bottom: 20px;
     }
     .card-section{
         display: block;
+
+    }
+    .high{
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
     }
 
+    .one, .x {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .two-tone-card {
+        width: 100%;
+        height: auto; /* Set height to auto for responsiveness */
+        margin-bottom: 20px; /* Add some spacing between cards for better readability */
+        
+    }
+    .separator-image {
+        max-width: 100%; /* Adjust the separator image to be responsive */
+        margin: 0; /* Remove margin for smaller screens */
+    }
+
+    .card-section {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards in the container */
+    }
+
+    .two-tone-card .upper-half,
+    .two-tone-card .lower-half {
+        width: 100%; /* Make upper and lower halves take full width on smaller screens */
+        border-radius: 0; /* Remove border-radius if not needed */
+    }
+
+    .upper-half{
+        height: 30%; 
+    }
+
+    .two-tone-card .upper-half{
+        padding-top: 12px !important;
+    }
+
+    .lower-half{
+        height: 70%;
+    }
 
 }
 
-.room {
-    width: 590px;
-}
-
-
-.two-tone-card{
-    width: 450px;
-    height: 550px;
-}
-*/
