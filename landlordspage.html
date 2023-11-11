@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House-rentig-website</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css">
+        <!-- google-font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- image-section -->
+    <section class="image-section">
+        <div class="firstimg">
+            <img src="./img/firstimg.png" alt="" class="w-100 h-100">
+            <div class="form-container col-5">
+                <h1 class="earn text-center">Earn more from your <br> property, do less</h1>
+                <p class="text-center find">Find out if your property meets our criteria</p>
+
+                <!-- form-section -->
+                <div class="form-card">
+                    <form action="" id="myForm" onsubmit="return validateForm()">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Name*" class="name col-12 border-0 rounded p-3">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email*" class="name col-12 border-0 rounded p-3">
+                        <label for="phone number"></label>
+                        <input type="number" id="phone number" placeholder="Phone number*" class="name col-12 border-0 rounded p-3">
+                    </form>
+
+                    <h2 class="pt-3">property details</h2>
+
+                    <div class="details gap-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="city" class="rouned"></label>
+                                <select id="city"class="rounded border-0 w-100 p-3 col-md-5 mt-1" style="color: #49735A;">
+                                    <option value="" class="">City</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 ">
+                                <label for="areas"></label>
+                                <select id="areas" class="name rounded border-0 w-100 p-3 col-md-5 mt-1" style="color: #49735A;">
+                                    <option value="" class="">Areas</option>
+                                    <option value="">first floor</option>
+                                    <option value="">second floor</option>
+                                </select>
+                            </div>  
+                        </div>
+                        
+                        <label for="# of bedrooms"></label>
+                        <select id="# of bedrooms"  class="name rounded border-0 p-3 col-12 pt-3 mt-1" style="color: #49735A;">
+                            <option value="" class=""># of bedrooms</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center pt-4" >
+                        <button class="btn text-white text-center rounded-pill px-5 px-2">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Better-section -->
+    <section class="">
+        <div class="better ">
+            <h1 class="text-center mt-5 pt-5">Better than Property Management</h1>
+            <p class="text-center">We work with 100+  companies to meet accommodation needs in London. Offer a dedicated <br>booking manager that can help to find properties for your needs.</p>
+            <div class="container">
+                <div class="row py-5 mb-5 ">
+                    <div class="col-md-6 col-lg-3 col-12 bet">
+                        <div class="card mx-auto  border-0 text-start">
+                            <div class="card-body position-relative ">
+                              <img src="./img/Vector (2).png" alt="">
+                              <h5 class="card-title my-3 text-black ">Guaranteed rent</h5>
+                              <p class="card-text">We do the searching for you</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="card mx-auto border-0 text-start ">
+                            <div class="card-body position-relative">
+                              <img src="./img/eva_pricetags-fill.png" alt="">
+                              <h5 class="card-title my-3 text-black">No feeds</h5>
+                              <p class="card-text">Preferred partner rates</p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="card mx-auto border-0 text-start ">
+                            <div class="card-body position-relative">
+                              <img src="./img/ic_round-apartment.png" alt="">
+                              <h5 class="card-title my-3 text-black ">No voids</h5>
+                              <p class="card-text">Preferred partner rates</p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-12">
+                        <div class="card mx-auto  border-0 text-start ">
+                            <div class="card-body position-relative">
+                              <img src="./img/fluent_access-time-24-filled.png" alt="">
+                              <h5 class="card-title my-3 text-black">24/7 maintenance</h5>
+                              <p class="card-text">Extend on short notice</p>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how-it-works -->
+    <section class="third-section  pb-5">
+        <div class="works">
+            <h1 class="text-center pt-5">How it works</h1>
+        </div>
+        <div class="work d-flex position-relative">
+            <div class="first-work">
+                <div class="touch text-center ">
+                    <img src="./img/Vector (9).png" alt="">
+                    <h2>Get in touch</h2>
+                    <p class="">Ut id cras malesuada dolor. Consectetur eget malesuada enim massa <br>viverra mauris</p>
+                </div>
+                <div class="property">
+                    <img src="./img/eva_eye-fill.png" alt="">
+                    <h2>Property viewing</h2>
+                    <p>Sit lectus parturient diam ac congue elementum praesent blandit. <br> Tristique ut ut venenatis tortor, id elementum. Integer tristique <br>viverra enim libero.</p>
+                </div>
+                <div class="moving">
+                    <img src="./img/Vector (10).png" alt="">
+                    <h2>Moving in & Moving up!</h2>
+                    <p>Sit lectus parturient diam ac congue elementum praesent blandit. <br>Tristique ut ut venenatis tortor, id elementum. Integer tristique <br> viverra enim libero.</p>
+                </div>
+        
+            </div>
+            <div class="ellipse position-absolute top-0 start-50 translate-middle-x">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center single">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center two">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center three">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center four">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center five">
+                <img src="./img/Ellipse 9.png" alt="" class="text-center six">
+            </div>
+            <div class="line text-center line-container">
+                <img src="./img/Line 1.png" alt="" class="">
+            </div>
+    
+            <div class="second-work ">
+                <div class="chat">
+                    <img src="./img/eva_people-fill.png" alt="">
+                    <h2>Let's chat</h2>
+                    <p>Euismod commodo feugiat purus egestas diam. Facilisi sed <br>senectus consequat risus. Porta purus nec dui odio vehicula.</p>
+                </div>
+                <div class="decorate">
+                    <img src="./img/eva_pantone-fill.png" alt="">
+                    <h2>Time to decorate</h2>
+                    <p>Adipiscing magna ut justo, et. Sem pellentesque eu risus euismod <br>et. Sapien est tellus dapibus sed varius lorem tellus, turpis nisl. <br>Elementum scelerisque elit in nibh aliquet phasellus.</p>
+                </div>
+                <div class="relax">
+                    <img src="./img/eva_sun-fill.png" alt="">
+                    <h2>Sit back & Relax</h2>
+                    <p>Euismod commodo feugiat purus egestas diam. Facilisi sed <br>senectus consequat risus. Porta purus nec dui odio vehicula.</p>
+                </div>
+        </div>
+        
+    
+        </div>
+
+        
+    </section>
+
+    <!-- partnership-section -->
+
+    <section class="pt-5 mt-5">
+        <div class="cooperate">
+            <h1 class="text-center">Corporate Partnerships</h1>
+            <p class="text-center">We work with 100+  companies to meet accommodation needs in London. Offer a dedicated <br>
+                booking manager that can help to find properties for your needs.</p>
+            <div class="pt-5">
+                <div class="row">
+                    <div class="room pt-3 col-6 position-relative">
+                        <div class="col-md-6 w-100">
+                            <img src="./img/unsplash_it-_C9yfRIM (2).png" alt="" class="w-100 unsplash">
+                        </div>
+                        <!-- overlay-image -->
+                        <div class="before overlay-image">
+                            <img src="./img/before.png" alt="Overlay Image 1 " class="overlay-image">
+                        </div>
+                    </div>
+                    <div class="room pt-3 col-6 position-relative">
+                        <div class="col-md-6 w-100">
+                            <img src="./img/unsplash_it-_C9yfRIM (3).png" alt="" class="w-100 unsplash">
+                        </div>
+                        <!-- overlay-image -->
+                        <div class="after overlayy-image">
+                            <img src="img/after.png" alt="Overlay Image 2 " class="overlayy-image">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- partnership-cards -->
+            <div class="cards pt-3">
+                <div class="container">
+                    <div class="row py-5 mb-5 part">
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="cards mx-auto border-0 text-start">
+                                <div class="card-body position-relative text-center">
+                                  <img src="./img/Vector (5).png" alt="">
+                                  <h5 class="card-title my-3 text-black">Consequat risus</h5>
+                                  <p class="card-text">Euismod commodo feugiat purus egestas diam. Facilisi sed senectus consequat risus. Porta purus nec dui odio vehicula.</p>
+                                </div>
+                              </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="cards mx-auto border-0 text-start ">
+                                <div class="card-body position-relative text-center">
+                                  <img src="./img/Vector (8).png" alt="">
+                                  <h5 class="card-title my-3 text-black">Morbi pulvinar</h5>
+                                  <p class="card-text">Eu vulputate mi cras quam lectus. Ut ut dignissim amet dignissim gravida sit ullamcorper lectus.</p>
+                                </div>
+                              </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="cards mx-auto  border-0 text-start ">
+                                <div class="card-body position-relative text-center">
+                                  <img src="./img/Vector (7).png" alt="">
+                                  <h5 class="card-title my-3 text-black text-center">Turpis elit</h5>
+                                  <p class="card-text">Arcu venenatis id dignissim massa ipsum. Viverra mi habitant urna at elit dignissim cursus ut facilisi.</p>
+                                </div>
+                              </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="cards mx-auto  border-0 text-start ">
+                                <div class="card-body position-relative text-center">
+                                  <img src="./img/Vector (6).png" alt="">
+                                  <h5 class="card-title my-3 text-black ">Faucibus egestas</h5>
+                                  <p class="card-text ">Vehicula arcu, felis, et urna, nunc, ut eget pellentesque scelerisque. Accumsan et velit nibh tempor.</p>
+                                </div>
+                              </div>
+                        </div>
+    
+                    </div>
+            </div>
+                
+                
+        </div>
+    </section>
+
+    <!-- pricing-section -->
+
+    <section>
+        <div class="pricing">
+            <h1 class="text-center">Pricing</h1>
+            <p class="text-center">Compare our pricing model to high street agents</p>
+        </div>
+        <div class="pricing-sec text-center">
+            <div class="card-section d-flex text-center justify-content-center align-items-center">
+
+                <!-- pricing-card -->
+                <div class="two-tone-card pt-3 high">
+                    <div class="upper-half text-center pt-5">
+                        <h4>High street agent</h4>
+                        <h1>12%</h1>
+                        <p>management fee</p>
+                    </div>
+                    <div class="lower-half container  pt-3">
+                        <div class=" d-flex pl-3 justify-content-flex-start pr-5">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p class="">6 to 12 months</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>No maintenance</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>No weekly cleaning</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>No interior design</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>5% void</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>£24,900</p>
+                        </div>    
+                    </div>
+                </div>
+
+                <img src="./img/Vs.png" alt="Image Description" class="separator-image">
+
+
+                <!-- second-card -->
+                <div class="two-tone-card pt-3 living">
+                    <div class="upper-half text-center pt-5">
+                        <h4>Flex Living (guaranteed Rental)</h4>
+                        <h1>Fixed price</h1>
+                        <p>monthly</p>
+                    </div>
+                    <div class="lower-half pt-3">
+                        <div class=" d-flex pl-3 justify-content-flex-start pr-5">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p class="">3 to 5 months</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>Free maintenance</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>Weekly cleaning</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>Interior design</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>No void</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
+                            <p>£30,000</p>
+                        </div>
+                        <div class="get ">
+                            <button class="get-btn text-center text-white rounded-pill border-0 py-1 px-5">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Question-section -->
+    <section class="asked-question pt-5 mt-5 ">
+        <div class="questions  ">
+            <h1 class="text-center pb-4 col-12 pt-5">Frequently Asked Questions</h1>
+            <div class="one d-flex ">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6 class="pl-5">Integer morbi semper sodales sit facilisi habitant pulvinar sed venenatis?</h6>
+                        <p class="magnis pl-5">Magnis congue neque sociis ut nisl. Quis dui lobortis lectus viverra.</p>
+                    </div>
+                    
+                    <div class="image close">
+                        <img src="./img/Close.png" alt="" class="x justify-content-flex-end">
+                    </div>
+                </div>
+            </div> 
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Massa massa nulla rhoncus a quam consectetur sed purus, enim?</h6>
+                        <p class="magnis">Nunc molestie sit in sed sodales. Bibendum pharetra, id viverra suspendisse pharetra ac aenean neque. Sodales ornare penatibus eros <br> consectetur potenti in feugiat purus. Posuere amet, sodales nibh eget. A et, a ante pretium praesent elementum feugiat pharetra congue.</p>
+                    </div>
+                    <div class="image">
+                        <img src="./img/Close.png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Dignissim congue rutrum pretium nunc sed nibh vitae tortor ut?</h6>
+                        
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Vulputate imperdiet fusce vivamus nunc leo morbi scelerisque in?</h6>
+    
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Sit rhoncus rhoncus malesuada massa adipiscing arcu, semper ut in?</h6>
+    
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Vulputate nisl non neque iaculis lacus dui, habitant gravida?</h6>
+    
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Est felis a velit at vitae venenatis rhoncus?</h6>
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Est felis a velit at vitae venenatis rhoncus?</h6>
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+    
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                       <h6>Eget nam accumsan elementum accumsan imperdiet eu, cras?</h6>    
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                    </div>
+                </div>
+            </div>
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">
+                        <h6>Fermentum et semper aliquet justo, facilisis?</h6>
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="one d-flex">
+                <div class="statement flex-container">
+                    <div class="first">    
+                        <h6>A vulputate est diam tempus condimentum in?</h6>
+                    </div>
+                    <div class="image">
+                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
+                    </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap-script -->
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+      crossorigin="anonymous">
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
