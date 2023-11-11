@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flex Living</title>
+        <!--swiper.js-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <!--bootstrap-library-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!---------------bootstrap-cdn---------------->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Boxicon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+         <!-- CDN for Remix icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--font awesome-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+        <!--font awesome script-->
+        <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+        <!--google font Lato-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <!---->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <!--css-->
+        <link rel="stylesheet" href="./css/homepage.css">
+        <link rel="stylesheet" href="./css/property.css">
+    </head>
+    <body class="lato">
+        <header id="header">
+            <!------------Navigation------------>
+            <nav class="navbar navbar-expand-lg container-fluid overflow-hidden">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="./landlordspage.html">Landlords</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="./contactpage.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="./signup.html">
+                                <button type="button" class=" btn btn-primary">Sign In</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!----------------Navigation-end---------------->
+        </header>
+        <section id="hero-page " class="desktop-view">
+            <div class="hero-page pt-5 ">
+            <div class="row px-1 ps-4">
+                <div class="col-lg-8 col-md-12 col-sm-12  pb-0 lg-bed rounded-5 justify-content-start align-items-end d-flex mx-2 mx-lg-0">
+                    <div class=" book-btn text-center py-4 ps-5">
+                        <button class=" bt-bg-col text-white fw-bold border-0 rounded-pill book-button fs-4" type="submit">View all photos</button>
+                    </div>
+                </div>
+                <div class="col-lg-4  text-center ">
+                    <div class="row h-100 gap-4 ps-4">
+                        <div class="col-lg-5 col-sm-2  mt-lg-0 img-1 rounded-4 "></div>
+                        <div class="col-lg-5 mt-lg-0 img-2 rounded-4  "></div>
+                        <div class="col-lg-5 img-3 rounded-4 "></div>
+                        <div class="col-lg-5 img-4 rounded-4 "></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mobile-view d-lg-none">
+            <div class=" my-5">
+                <div class="swiper sample-slider my-5 m-auto">
+                <div class="swiper-wrapper gap-1">
+                    <div class="swiper-slide"><img src="./assets/images/property_images/1.png" alt="" width="400" height="440"></div>
+                    <div class="swiper-slide"><img src="./assets/images/property_images/unsplash_akz0w36DpM4.png" alt="" width="400" height="440"></div>
+                    <div class="swiper-slide"><img src="./assets/images/property_images/4.png" alt="" width="400" height="440"></div>
+                    <div class="swiper-slide"><img src="./assets/images/property_images/5.png" alt="" width="400" height="440"></div>
+                    <div class="swiper-slide"><img src="./assets/images/property_images/unsplash_qeIuFR5vPm8.png" alt="" width="400" height="440"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="booking-time" class=" mt-5">
+            <div class="py-5">
+                <div class="row">
+                    <div class="col-lg-6 px-2 px-lg-0">
+                        <div class=" pb-3">
+                            <h1 class="fw-bolder display-5">Rhoncus suspendisse</h1>
+                            <p class="fs-5 pt-2">London, Notting Hill</p>
+                        </div>
+                        <div class="row w-100 appartment  pb-4 ">
+                            <div class="col-lg-6 bedroom d-flex  gap-5 ">
+                                <div><span  class="fs-5"><i class='bx bxs-bed fw-bold'></i>  2 bedroom</span></div>
+                                <div><span  class="fs-5"><i class='bx bxs-bath fw-bold'></i>  bath</span></div>
+                            </div>
+                            <div class="address col-lg-6 mt-3 mt-lg-0"><p class="fs-6 mb-0">500 sq.ft | City view  |  3rd floor  |  Elevator </p></div>
+                        </div>
+                        <div class="description">
+                            <h1 class="fs-3  lato fw-bolder">Desription</h1>
+                            <p class=" text-col py-1 lato fw-normal fs-4">A truly global city, London has long been considered a cutting-edge metropolis and hub for culture, style and finance. With each borough, Tube zone and neighborhood of London sporting its own vibe and lifestyle advantages, it can be downright difficult to settle on where to look for a furnished apartment in London . Whether you’re a digital nomad looking  for a studio apartment in London or just seeking a month to month rental in London, Blueground has you covered.</p>
+                        </div>
+                        <div class="in-sed">
+                            <h1 class="fs-3 lato fw-bolder">In sed</h1>
+                            <p class=" text-col py-1 lato fw-normal fs-4">In nullam eget urna suspendisse odio nunc. Eu sodales vestibulum, donec rutrum justo, amet porttitor vitae et. Interdum consectetur dictum mattis gravida sed vulputate. Tempus sagittis cras sagittis viverra erat proin duis enim. </p>
+                        </div>
+                        <div class="risus">
+                            <h1 class="fs-3  lato fw-bolder">Adipiscing risus, fermentum</h1>
+                            <p class=" text-col py-1 lato fw-normal fs-4">Laoreet risus accumsan pellentesque lacus, in nulla eu elementum. Mollis enim fringilla aenean diam tellus diam morbi ipsum placerat. </p>
+                        </div>    
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" rounded-4 price-bg-col mt-5 mt-lg-0 px-0 mx-0">
+                            <div class=" px-lg-5 py-lg-4 px-md-5 py-md-4" id="price">
+                                <h4 class="fw-bolder display-5 mb-2 text-center pt-2">£3990 / Month</h4>
+                                <div class="  px-0 " >
+                                    <div class="row d-flex justify-content-between ">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="date">
+                                                <div class="move-in">
+                                                    <div class="move-in-text py-4 ">
+                                                        <p class="fs-4 lato fw-bold ">Move in</p>
+                                                        <div class="  d-flex justify-content-start   date-feild w-100">
+                                                            <span class="fs-5"></i> <input type="date" name="" id="" class="border-0 bg-white py-2 pe-3 ps-2 rounded-3 date"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mx-0   d-flex justify-content-lg-end justify-content-md-end">
+                                            <div class="date">
+                                                <div class="move-in">
+                                                    <div class="move-in-text py-4 ">
+                                                        <p class="fs-4 lato fw-bold ">Move out</p>
+                                                        <div class="  d-flex justify-content-start   date-feild ">
+                                                            <span class="fs-5"></i> <input type="date" name="" id="" class="border-0 bg-white py-2 pe-3 ps-2 rounded-3 date"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start gap-4 py-1 fs-5  py-3">
+                                    <div class=" d-lg-block">
+                                        <div class="d-flex align-items-center place-user-wrapper">
+                                            <i class="fa-solid fa-user-group px-2"></i>
+                                            <p class="mb-0 px-2 fw-bold">Guest</p>
+                                            <button type="button" class="bg-white mx-2 addbtn price-bg-col "><i class="fa-solid fa-plus "></i></button>
+                                            <p class="mb-0 px-2 count fw-bold">0</p>
+                                            <button type="button" class="bg-white mx-2 minusbtn price-bg-col"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="fs-5 pt-1 pb-4 px-0">All utilities are included</p>                           
+                                <div class=" py-2 py-lg-3 fs-5 pe-2">
+                                    <div class="d-flex justify-content-between mb-4 ">
+                                        <span>Average monthy rent</span>
+                                        <span><div class="price-text d-flex justify-content-center flex-column gap-1">
+                                            <span>£3700</span>
+                                            <span class="smal-font text-end">incl. VAT</span>
+                                        </div></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4 ">
+                                        <span><b>Pay upon booking </b> <i class="ri-folder-warning-fill "></i></span>
+                                        <span><div class="price-text d-flex justify-content-center flex-column gap-1">
+                                            <span><b>£3989.23</b></span>
+                                            <span class="smal-font text-end">incl. VAT</span>
+                                        </div></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4  ">
+                                        <span><div class="price-text d-flex justify-content-center flex-column gap-1">
+                                            <span>Total costs  <i class="ri-folder-warning-fill "></i></span>
+                                            <span class="fs-6">Show more</span>
+                                        </div></span>
+                                        <span><div class="price-text d-flex justify-content-center flex-column gap-1">
+                                            <span class="fs-">£4001.70</span>
+                                            <span class="smal-font text-end">incl. VAT</span>
+                                        </div></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class=" book-btn text-center py-2">
+                                    <button class=" bt-bg-col text-white fw-bold border-0 rounded-pill book-button fs-4" type="submit">Continue Booking</button>
+                                </div>
+                                <p class="text-center fs-4 py-3 py-lg-5">When you book this apartment, your reservation will be cofirmed instantly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="amenities">
+            <div class="container-fluid px-">
+                <h1 class="text-center lato display-4 fw-bolder pb-5">Amenities</h1>
+                <div class="row  w-100 ">
+                    <div class="col-lg-4 px-md-5 p-lg-5 ">
+                        <div class="tv d-flex justify-content-between align-items-center px-1 my-2 ">
+                            <div class="amenities-text ">
+                                <h1 class="lato fw-bold fs-3">TV</h1>
+                                <p class="lato fs-6">Flatscreen TV</p>
+                            </div>
+                            <div class="amenities-icons ">
+                                <img src="./assets/images/property_images/mdi_television.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="fire-place d-flex justify-content-between align-items-center px-1 my-2">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Fireplace</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_fireplace.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="phone d-flex justify-content-between align-items-center px-1 my-2">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Phone</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_phone-classic.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="work-desk d-flex justify-content-between align-items-center px-1 mt-2">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Work desk</h1>
+                                <p class="lato fs-7">With computer</p>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_desktop-mac-dashboard.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 px-md-5 p-lg-5"> 
+                        <div class="fridge d-flex justify-content-between align-items-center px-1 my-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Fridge</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_fridge.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="kettle d-flex justify-content-between align-items-center px-1 my-4">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Kettle</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_kettle.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="coffee-machine d-flex justify-content-between align-items-center px-1 my-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Coffee machine</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_coffee-maker.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="dishes d-flex justify-content-between align-items-center px-1 mt-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Dishes</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/Vector.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 px-md-5 p-lg-5">
+                        <div class="washing-machine d-flex justify-content-between align-items-center px-1 my-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold fs-3">Washing machine</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_washing-machine.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="dryer d-flex justify-content-between align-items-center px-1 my-4">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold  fs-3">Dryer</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_tumble-dryer.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="iron d-flex justify-content-between align-items-center px-1 my-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold  fs-3">Iron</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_curling.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                        <div class="wardrope d-flex justify-content-between align-items-center px-1 my-3">
+                            <div class="amenities-text">
+                                <h1 class="lato fw-bold  fs-3">Wardrobe</h1>
+                            </div>
+                            <div class="amenities-icons">
+                                <img src="./assets/images/property_images/mdi_wardrobe.png" width="50" height="50" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="neigbhood">
+            <div class="container-fluid my-5">
+                <h1 class="text-center fw-bolder lato py-5 mt-5 display-4">Neighbourhood</h1>
+                <p class="fs-4">Ultricies etiam sit auctor aenean donec nunc, elementum etiam nisl. Sed arcu, sed elit egestas faucibus pellentesque. Morbi faucibus faucibus nam volutpat arcu lorem pharetra a. Pretium dolor nunc, dolor elit lectus sit amet sit. Elit enim mi ornare id ultricies accumsan proin amet.</p>
+
+                <p class="fs-4">Molestie amet, pretium eu massa a, pharetra. Tellus quisque sollicitudin tristique maecenas vitae fames eget ut. Nisl commodo lacinia ultrices ut odio dui at. Adipiscing ac auctor hac urna dictum. Urna quis enim lobortis vel dignissim sed posuere. Semper lectus neque leo mollis pellentesque auctor pharetra, sed. Varius facilisis in sem tristique. Mauris condimentum pellentesque non commodo, quisque eget dolor. Et ultrices id placerat accumsan. Consectetur consectetur libero orci dolor dolor sagittis. Leo, augue sit sem adipiscing purus ut at malesuada. Dolor, eu dignissim adipiscing eget sed metus.</p>
+            </div>
+        </section>
+        <section id="location">
+            <div class="container-fluid my-5">
+                <h1 class="text-center fw-bolder lato py-5 mt-5 display-4">Location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9931.02114826578!2d-0.20524074042564155!3d51.51770540164644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761003cc447021%3A0xa4f2659b18e94dc7!2sWestbourne%20Green%2C%20London%20W2%205LH%2C%20UK!5e0!3m2!1sen!2sng!4v1699551895792!5m2!1sen!2sng" style="border:0; height: 100vh; width: 100%; " allowfullscreen="" loading="" referrerpolicy=""></iframe>
+            </div>
+        </section>
+        <section id="Policy-detail">
+            <div class="container-fluid py-3">
+                <h1 class="text-center lato display-4 fw-bolder pb-5">Policy detail</h1>
+                <div class="row  w-100 ">
+                    <div class="col-lg-4 p-lg-5 ">
+                        <h1 class="fw-bold fs-2  lato  pb-4">House rules</h1>
+                        <div class="house-rules">
+                            <div class="time-in d-flex  py-2"> 
+                                <div class="check-in-time d-flex justify-content-center align-items-center gap-4 ">
+                                    <img src="./assets/images/property_images/eva_clock-fill.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-4 mb-0">Checkin time</p>
+                                </div>
+                            </div>
+                            <div class="time-in  d-flex py-2"> 
+                                <div class="check-in-time d-flex justify-content-center align-items-center gap-4 ">
+                                    <img src="./assets/images/property_images/eva_clock-fill.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-3 mb-0">Checkout time</p>
+                                </div>
+                            </div>
+                            <div class="time-in  d-flex py-2"> 
+                                <div class="check-in-time d-flex justify-content-center align-items-center gap-4 ">
+                                    <img src="./assets/images/property_images/foundation_no-smoking.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-3 mb-0">No smoking</p>
+                                </div>
+                            </div>
+                            <div class="time-in  d-flex py-2"> 
+                                <div class="check-in-time d-flex justify-content-center align-items-center gap-4 ">
+                                    <img src="./assets/images/property_images/ic_twotone-pets.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-3 mb-0">No pets</p>
+                                </div>
+                            </div>
+                            <div class="time-in   d-flex py-2"> 
+                                <div class="check-in-time d-flex justify-content-center align-items-center gap-4 ">
+                                    <img src="./assets/images/property_images/bx_bxs-party.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-3 mb-0">No parties or events</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-lg-5 my-5 my-lg-0"> 
+                        <h1 class="fw-bold fs-2 lato  pb-2">Cancellation Policy</h1>
+                        <div class="cancellation-policy">
+                            <div class="time-in d-flex  py-2"> 
+                                <div class="check-in-time d-flex  gap-4 ">
+                                    <img src="./assets/images/property_images/eva_close-circle-fill.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-4 mb-0">Free Cancellation up to 24hrs 
+                                        before checkin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-lg-5">
+                        <h1 class="fw-bold fs-2 lato pb-2">Health & Safty</h1>
+                        <div class="health-safty">
+                            <div class="time-in  d-flex  py-2"> 
+                                <div class="check-in-time d-flex  gap-4  ">
+                                    <img src="./assets/images/property_images/eva_shield-fill.png" width="40" height="40" alt="" >
+                                    <p class="lato fs-4 mb-0">Cleaner in accordance with our 
+                                        COVID safe cleaning policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container py-5">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                        </div>
+                        <div class="ps-lg-3 d-none d-md-block">
+                            <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                            <div class="d-flex">
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="px-2 text-success">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <p class="footer-contact">&copy;2021 Flex Living</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row gy-4">
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
+                                <p>Company</p>
+                                <ul class="">
+                                    <li class="py-2">
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">About us</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">Our team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
+                                <p>Guest</p>
+                                <ul>
+                                    <li class="py-2">
+                                        <a href="">Blog</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">FAQ</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-company text-center">
+                                <p>Privacy</p>
+                                <ul>
+                                    <li class="py-2">
+                                        <a href="" class="nobreak">Tearms of Service</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="" class="nobreak">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-form-wrapper">
+                        <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                        <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
+                        <div>
+                            <form class="needs-validation" novalidate>
+                                <div class=" my-4">
+                                    <input type="email" class="form-control" id="validationCustom01"
+                                        placeholder="Enter email address" required>
+                                    <span class="pop"></span>
+                                    <div class="invalid-feedback">
+                                        Please enter your email address!
+                                    </div>
+                                    <div class="valid-feedback"></div>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-start">
+                                    <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ps-lg-3 d-block d-md-none">
+                    <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-linkedin-in fs-4"></i>
+                        </a>
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-facebook-f fs-4"></i>
+                        </a>
+                        <a href="#" class="px-2 text-success">
+                            <i class="fa-brands fa-twitter fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="library">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 800,
+                    delay: 100,
+                    easing: 'ease-in-out',
+                });
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+            <script src="./js/property.js"></script>
+            <script src="./js/homepage.js"></script>  
+        </section>
+    </body>
+</html>

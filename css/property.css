@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.lato{
+    font-family:'Lato', sans-serif;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+}
+
+/* global color */
+
+.bt-bg-col{
+    background-color: #064749;
+}
+
+.sec-bg-col{
+    background-color: #49735A;
+}
+
+.text-col{
+    color: #181A18;
+}
+
+.price-bg-col{
+    background-color: #F2F0F2 !important;
+}
+
+
+
+.book-button{
+    padding: .5em 2em;
+}
+
+.icon-size{
+    font-size: 100em;
+}
+
+#booking-time, #amenities, #neigbhood, #Policy-detail{
+    width: 90%;
+    margin: auto;
+}
+/* #price{
+    width: 0%;
+} */
+
+.margin-use{
+    width: 100%;
+   
+}
+
+.lg-bed{
+    background-image: url(../assets/images/property_images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+.img-1{
+    background-image: url(../assets/images/property_images/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.img-2{
+    background-image: url(../assets/images/property_images/unsplash_akz0w36DpM4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img-3{
+    background-image: url(../assets/images/property_images/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img-4{
+    background-image: url(../assets/images/property_images/unsplash_qeIuFR5vPm8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.smal-font{
+    font-size: .8em;
+}
+
+
+/* MEDIA QUERY */
+/*  MOBILE PHONE view*/
+@media screen and (min-width: 320px ) and (max-width: 480px) {
+    .desktop-view{
+        display: none !important;
+    }
+}
+    
+        
+/*Tab view*/
+@media screen and (min-width: 481px ) and (max-width: 885px) {
+    .desktop-view{
+        display: none !important;
+    }
+}
+
+/* Bigger Tab view*/
+@media screen and (min-width: 1076px ) and (max-width: 1350px) {
+    .destop-view{
+        display: none !important;
+    }
+}
+
+/* bigger pc view*/
+@media screen and (min-width: 1351px ) and (max-width: 1450px){
+    .mobile-view{
+        display: none !important;
+    }
+}
+
+.date{
+    outline: none !important;
+}
