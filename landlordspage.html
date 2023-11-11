@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House-rentig-website</title>
+    <title>Flex-Living</title>
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
         crossorigin="anonymous">
+        <!--font awesome script-->
+        <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+        
         <!-- styles -->
         <link rel="stylesheet" href="landlordspage.css">
         <!-- google-font -->
@@ -16,10 +19,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid overflow-hidden">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="landlordspage.html">Landlords</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./contactpage.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="./signup.html">
+                            <button type="button" class=" btn btn-primary">Sign In</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     <!-- image-section -->
     <section class="image-section">
         <div class="firstimg">
-            <img src="./img/firstimg.png" alt="" class="w-100 h-100">
+            <img src="./img/firstimg.png" alt="" class="w-100 h-100 first-img">
             <div class="form-container col-5">
                 <h1 class="earn text-center">Earn more from your <br> property, do less</h1>
                 <p class="text-center find">Find out if your property meets our criteria</p>
@@ -485,6 +522,125 @@
         </div>
     </section>
 
+    <!-- footer -->
+
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                    </div>
+                    <div class="ps-lg-3 d-none d-md-block">
+                        <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                        <div class="d-flex">
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="footer-contact">&copy;2021 Flex Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row gy-4">
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Company</p>
+                            <ul class="">
+                                <li class="py-2">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">About us</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Guest</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Privacy</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Tearms of Service</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-form-wrapper">
+                    <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                    <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <div class=" my-4">
+                                <input type="email" class="form-control" id="validationCustom01"
+                                    placeholder="Enter email address" required>
+                                <span class="pop"></span>
+                                <div class="invalid-feedback">
+                                    Please enter your email address!
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-lg-3 d-block d-md-none">
+                <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-linkedin-in fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-facebook-f fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-twitter fs-4"></i>
+                    </a>
+                </div>
+                <div class="mt-2">
+                    <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- bootstrap-script -->
     <script 
@@ -493,6 +649,6 @@
       crossorigin="anonymous">
     </script>
 
-    <script src="app.js"></script>
+    <script src="landlordspage.js"></script>
 </body>
 </html>
