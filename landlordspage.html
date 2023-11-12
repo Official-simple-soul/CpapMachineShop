@@ -22,7 +22,7 @@
     <header id="header">
         <!------------Navigation------------>
         <nav class="navbar navbar-expand-lg container-fluid overflow-hidden">
-            <div class="container">
+            <div class="container ">
                 <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
                         alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,57 +55,62 @@
         </nav>
     <!-- image-section -->
     <section class="image-section">
-        <div class="firstimg">
-            <img src="./img/firstimg.png" alt="" class="w-100 h-100 first-img">
-            <div class="form-container col-5">
-                <h1 class="earn text-center">Earn more from your <br> property, do less</h1>
-                <p class="text-center find">Find out if your property meets our criteria</p>
-
-                <!-- form-section -->
-                <div class="form-card">
-                    <form action="" id="myForm" onsubmit="return validateForm()">
-                        <label for="name"></label>
-                        <input type="text" id="name" placeholder="Name*" class="name col-12 border-0 rounded p-3">
-                        <label for="email"></label>
-                        <input type="email" id="email" placeholder="Email*" class="name col-12 border-0 rounded p-3">
-                        <label for="phone number"></label>
-                        <input type="number" id="phone number" placeholder="Phone number*" class="name col-12 border-0 rounded p-3">
-                    </form>
-
-                    <h2 class="pt-3">property details</h2>
-
-                    <div class="details gap-3">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="city" class="rouned"></label>
-                                <select id="city"class="rounded border-0 w-100 p-3 col-md-5 mt-1" style="color: #49735A;">
-                                    <option value="" class="">City</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                </select>
+        <div class="firstimg overflow-hidden">
+            <div class="img-bg">
+                <div class="form-container col-5">
+                    <h1 class="earn text-center">Earn more from your <br> property, do less</h1>
+                    <p class="text-center find mb-0">Find out if your property meets our criteria</p>
+    
+                    <!-- form-section -->
+                    <div class="form-card">
+                        <form action="" id="myForm" onsubmit="return validateForm()">
+                            
+                            <input type="text" id="name" placeholder="Name*" class="name col-12 border-0 mb-3 rounded p-2 p-md-3">
+                            
+                            <input type="email" id="email" placeholder="Email*" class="name col-12 border-0 mb-3 rounded p-2 p-md-3">
+                            
+                            <input type="number" id="phone number" placeholder="Phone number*" class="name mb-3 col-12 border-0 rounded p-2 p-md-3">
+                        </form>
+    
+                        <h2 class="pt-1">property details</h2>
+    
+                        <div class="details">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                    <select id="city"class="rounded border-0 w-100 mb-md-4 p-2 mb-2 p-md-3 col-md-5 mt-1" style="color: #49735A;">
+                                        <option value="" class="">City</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 ">
+                                    
+                                    <select id="areas" class="name rounded border-0 mb-2 w-100 p-2 p-md-3 col-md-5 mt-1" style="color: #49735A;">
+                                        <option value="" class="">Areas</option>
+                                        <option value="">first floor</option>
+                                        <option value="">second floor</option>
+                                    </select>
+                                </div>  
                             </div>
-                            <div class="col-md-6 ">
-                                <label for="areas"></label>
-                                <select id="areas" class="name rounded border-0 w-100 p-3 col-md-5 mt-1" style="color: #49735A;">
-                                    <option value="" class="">Areas</option>
-                                    <option value="">first floor</option>
-                                    <option value="">second floor</option>
-                                </select>
-                            </div>  
+                            
+                            
+                            <select id="# of bedrooms"  class="name rounded border-0 p-2 p-md-3 col-12 pt-3 mt-1" style="color: #49735A;">
+                                <option value="" class=""># of bedrooms</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
                         </div>
-                        
-                        <label for="# of bedrooms"></label>
-                        <select id="# of bedrooms"  class="name rounded border-0 p-3 col-12 pt-3 mt-1" style="color: #49735A;">
-                            <option value="" class=""># of bedrooms</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center pt-4" >
-                        <button class="btn text-white text-center rounded-pill px-5 px-2">Submit</button>
+                        <div class="d-flex justify-content-center align-items-center" >
+                            <button class="btn text-white text-center rounded-pill mt-3 px-5 px-2">Submit</button>
+                        </div>
                     </div>
                 </div>
+                
+                    
+                
             </div>
+            
         </div>
     </section>
     <!-- Better-section -->
@@ -114,7 +119,7 @@
             <h1 class="text-center mt-5 pt-5">Better than Property Management</h1>
             <p class="text-center">We work with 100+  companies to meet accommodation needs in London. Offer a dedicated <br>booking manager that can help to find properties for your needs.</p>
             <div class="container">
-                <div class="row py-5 mb-5 ">
+                <div class="row py-5 mb-5 overflow-hidden ">
                     <div class="col-md-6 col-lg-3 col-12 bet">
                         <div class="card mx-auto  border-0 text-start">
                             <div class="card-body position-relative ">
@@ -166,7 +171,7 @@
             <h1 class="text-center pt-5">How it works</h1>
         </div>
         <div class="work d-flex position-relative">
-            <div class="first-work">
+            <div class="first-work overflow-hidden">
                 <div class="touch text-center ">
                     <img src="./img/Vector (9).png" alt="">
                     <h2>Get in touch</h2>
@@ -184,7 +189,7 @@
                 </div>
         
             </div>
-            <div class="ellipse position-absolute top-0 start-50 translate-middle-x">
+            <div class="ellipse position-absolute top-0 start-50 translate-middle-x overflow-hidden">
                 <img src="./img/Ellipse 9.png" alt="" class="text-center single">
                 <img src="./img/Ellipse 9.png" alt="" class="text-center two">
                 <img src="./img/Ellipse 9.png" alt="" class="text-center three">
@@ -196,7 +201,7 @@
                 <img src="./img/Line 1.png" alt="" class="">
             </div>
     
-            <div class="second-work ">
+            <div class="second-work overflow-hidden">
                 <div class="chat">
                     <img src="./img/eva_people-fill.png" alt="">
                     <h2>Let's chat</h2>
@@ -228,23 +233,23 @@
             <p class="text-center">We work with 100+  companies to meet accommodation needs in London. Offer a dedicated <br>
                 booking manager that can help to find properties for your needs.</p>
             <div class="pt-5">
-                <div class="row">
+                <div class="row overflow-hidden">
                     <div class="room pt-3 col-6 position-relative">
-                        <div class="col-md-6 w-100">
-                            <img src="./img/unsplash_it-_C9yfRIM (2).png" alt="" class="w-100 unsplash">
+                        <div class="col-md-6 w-100 overflow-hidden">
+                            <img src="./img/unsplash_it-_C9yfRIM (2).png" alt="" class=" unsplash ">
                         </div>
                         <!-- overlay-image -->
-                        <div class="before overlay-image">
+                        <div class="before overlay-image overflow-hidden">
                             <img src="./img/before.png" alt="Overlay Image 1 " class="overlay-image">
                         </div>
                     </div>
                     <div class="room pt-3 col-6 position-relative">
                         <div class="col-md-6 w-100">
-                            <img src="./img/unsplash_it-_C9yfRIM (3).png" alt="" class="w-100 unsplash">
+                            <img src="./img/unsplash_it-_C9yfRIM (3).png" alt="" class="unsplash">
                         </div>
                         <!-- overlay-image -->
                         <div class="after overlayy-image">
-                            <img src="img/after.png" alt="Overlay Image 2 " class="overlayy-image">
+                            <img src="./img/after.png" alt="Overlay Image 2 " class="overlayy-image">
                         </div>
                         
                     </div>
@@ -253,10 +258,10 @@
             <!-- partnership-cards -->
             <div class="cards pt-3">
                 <div class="container">
-                    <div class="row py-5 mb-5 part">
+                    <div class="row py-5 mb-5 part gy-5 ">
                         <div class="col-md-6 col-lg-3 col-12">
                             <div class="cards mx-auto border-0 text-start">
-                                <div class="card-body position-relative text-center">
+                                <div class="card-body position-relative text-center overflow-hidden">
                                   <img src="./img/Vector (5).png" alt="">
                                   <h5 class="card-title my-3 text-black">Consequat risus</h5>
                                   <p class="card-text">Euismod commodo feugiat purus egestas diam. Facilisi sed senectus consequat risus. Porta purus nec dui odio vehicula.</p>
@@ -309,7 +314,7 @@
             <p class="text-center">Compare our pricing model to high street agents</p>
         </div>
         <div class="pricing-sec text-center">
-            <div class="card-section d-flex text-center justify-content-center align-items-center">
+            <div class="card-section d-flex text-center justify-content-center align-items-center overflow-hidden">
 
                 <!-- pricing-card -->
                 <div class="two-tone-card pt-3 high">
@@ -356,7 +361,7 @@
                         <h1>Fixed price</h1>
                         <p>monthly</p>
                     </div>
-                    <div class="lower-half pt-3">
+                    <div class="lower-half pt-3 overflow-hidden">
                         <div class=" d-flex pl-3 justify-content-flex-start pr-5">
                             <img src="./img/Vector (11).png" alt="" class="tick pt-2 ">
                             <p class="">3 to 5 months</p>
@@ -392,132 +397,169 @@
     </section>
     <!-- Question-section -->
     <section class="asked-question pt-5 mt-5 ">
-        <div class="questions  ">
-            <h1 class="text-center pb-4 col-12 pt-5">Frequently Asked Questions</h1>
-            <div class="one d-flex ">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6 class="pl-5">Integer morbi semper sodales sit facilisi habitant pulvinar sed venenatis?</h6>
-                        <p class="magnis pl-5">Magnis congue neque sociis ut nisl. Quis dui lobortis lectus viverra.</p>
-                    </div>
-                    
-                    <div class="image close">
-                        <img src="./img/Close.png" alt="" class="x justify-content-flex-end">
-                    </div>
-                </div>
-            </div> 
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Massa massa nulla rhoncus a quam consectetur sed purus, enim?</h6>
-                        <p class="magnis">Nunc molestie sit in sed sodales. Bibendum pharetra, id viverra suspendisse pharetra ac aenean neque. Sodales ornare penatibus eros <br> consectetur potenti in feugiat purus. Posuere amet, sodales nibh eget. A et, a ante pretium praesent elementum feugiat pharetra congue.</p>
-                    </div>
-                    <div class="image">
-                        <img src="./img/Close.png" alt="" class="x justify-content-flex-end"> 
+        <div class="container-sm mb-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item  mt-3 border-0 py-1 shadow-sm ">
+                    <h1 class="accordion-header">
+                        <button class="accordion-button bg-white fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Integer morbi semper sodales sit facilisi habitant pulvinar sed venenatis?
+                        </button>
+                    </h1>
+                    <div id="collapseOne" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Magnis congue neque sociis ut nisl. Quis dui lobortis lectus viverra.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Dignissim congue rutrum pretium nunc sed nibh vitae tortor ut?</h6>
-                        
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
-                    </div>
-                </div>
-    
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Vulputate imperdiet fusce vivamus nunc leo morbi scelerisque in?</h6>
-    
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                <div class="accordion-item  mt-3 border-0  py-1 shadow-sm ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Massa massa nulla rhoncus a quam consectetur sed purus, enim?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Nunc molestie sit in sed sodales. Bibendum pharetra, id viverra
+                                suspendisse pharetra ac aenean neque. Sodales ornare penatibus eros consectetur
+                                potenti in feugiat purus. Posuere amet,
+                                sodales nibh eget. A et, a ante pretium praesent elementum feugiat pharetra congue.
+                            </p>
+                        </div>
                     </div>
                 </div>
-    
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Sit rhoncus rhoncus malesuada massa adipiscing arcu, semper ut in?</h6>
-    
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
-                    </div>
-                </div>
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Vulputate nisl non neque iaculis lacus dui, habitant gravida?</h6>
-    
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                <div class="accordion-item mt-3 border-0  py-1 shadow-sm ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Dignissim congue rutrum pretium nunc sed nibh vitae tortor ut?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Dignissim congue rutrum pretium nunc sed nibh vitae tortor ut?
+                            </p>
+                        </div>
                     </div>
                 </div>
-    
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Est felis a velit at vitae venenatis rhoncus?</h6>
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
-                    </div>
-                </div>
-    
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Est felis a velit at vitae venenatis rhoncus?</h6>
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
+                <div class="accordion-item  mt-3 border-0 py-1 shadow-sm">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button  bg-white  fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                            aria-controls="collapsefour">
+                            Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                        </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p> Molestie a iaculis at erat pellentesque adipiscing commodo.
+                                Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra
+                                maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                                Purus gravida quis blandit turpis cursus in.
+                            </p>
+                        </div>
                     </div>
                 </div>
-    
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                       <h6>Eget nam accumsan elementum accumsan imperdiet eu, cras?</h6>    
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class="x justify-content-flex-end"> 
-                    </div>
-                </div>
-            </div>
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">
-                        <h6>Fermentum et semper aliquet justo, facilisis?</h6>
-                    </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
+                <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
+                            dolor?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse   collapse "
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="one d-flex">
-                <div class="statement flex-container">
-                    <div class="first">    
-                        <h6>A vulputate est diam tempus condimentum in?</h6>
+                <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Est felis a velit at vitae venenatis rhoncus?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse   collapse "
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
                     </div>
-                    <div class="image">
-                        <img src="img/Close (1).png" alt="" class=" x justify-content-flex-end"> 
+                </div>
+                <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Eget nam accumsan elementum accumsan imperdiet eu, cras?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse   collapse "
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
                     </div>
-            </div>
-            
+                </div>
+                <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button  bg-white fs-4 fw-bold  collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Fermentum et semper aliquet justo, facilisis?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse   collapse "
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item   mt-3 border-0 py-1  shadow-sm ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button  bg-white fs-4 fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            semper aliquet justo, facilisis?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse   collapse "
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
