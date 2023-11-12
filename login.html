@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex Living</title>
+<!--swiper.js-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!--bootstrap-library-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!---------------bootstrap-cdn---------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!--Boxicon-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--font awesome-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+<!--font awesome script-->
+<script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+<!--google font Lato-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!---->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!--css-->
+<link rel="stylesheet" href="./css/homepage.css">
+<link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100" class="signup-page">
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="#">Landlords</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!----------------Navigation-end---------------->
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="d-flex flex-column align-items-center form-container">
+                <h1 class="fw-bold">Login</h1>
+                <p>or sign in with
+                    <a href="#" class="text-primary ms-1">Email</a>
+                    <a href="#" class="text-primary mx-1">Gmail</a>
+                    <a href="#" class="text-primary">Facebook</a>
+                </p>
+
+                <form class="mt-4" id="signinForm">
+                    <p id="error" class="text-danger text-center"></p>
+                    <fieldset>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Password" name="password">
+                        </div>
+
+                        <div class="text-center pt-3">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <p class="fw-bold fs-3 mt-5">Don't have an account? <a href="./signup.html" class="text-primary fw-bold ps-1">Sign up</a></p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                    </div>
+                    <div class="ps-lg-3 d-none d-md-block">
+                        <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                        <div class="d-flex">
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="footer-contact">&copy;2021 Flex Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row gy-4">
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Company</p>
+                            <ul class="">
+                                <li class="py-2">
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">About us</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Guest</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="">Blog</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Privacy</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Tearms of Service</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="" class="nobreak">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-form-wrapper">
+                    <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                    <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <div class=" my-4">
+                                <input type="email" class="form-control" id="validationCustom01"
+                                    placeholder="Enter email address" required>
+                                <span class="pop"></span>
+                                <div class="invalid-feedback">
+                                    Please enter your email address!
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-lg-3 d-block d-md-none">
+                <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-linkedin-in fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-facebook-f fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-twitter fs-4"></i>
+                    </a>
+                </div>
+                <div class="mt-2">
+                    <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="./js/auth.js"></script>
+</body>
+
+</html>
