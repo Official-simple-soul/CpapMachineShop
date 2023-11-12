@@ -39,10 +39,10 @@ body{
     font-size: 100em;
 }
 
-#booking-time, #amenities, #neigbhood, #Policy-detail{
+/* #booking-time, #amenities, #neigbhood, #Policy-detail{
     width: 90%;
     margin: auto;
-}
+} */
 /* #price{
     width: 0%;
 } */
