@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="./css/bookingpage.css">
 </head>
 <!-- navigation -->
-<body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100">
+
+<body >
     <header id="header">
         <nav class="navbar navbar-expand-lg container-fluid">
             <div class="container">
@@ -64,7 +65,7 @@
                 </div>
             </div>
         </nav>
-<!-- filter Button -->
+        <!-- filter Button -->
         <div class="container-sm py-5">
             <div class="col-12">
                 <div
@@ -169,16 +170,18 @@
         </section>
         <!-- Booking Image -->
         <section id="booking-images">
-            <div class="container-sm py-5" data-aos="fade-up" data-aos-duration="1000">
-                <div class="row   gy-4  overflow-hidden">
+            <div class="container-sm py-5" >
+                <div class="row   gy-4 ">
                     <div class="col-lg-8">
                         <div class="card  border-0 " style="max-width: 700px;">
                             <div class="row g-0">
-                                <div class="col-md-4 col-sm-12">
-                                    <img src="./assets/images/booking_page_images/Booking-1.png " class="img-fluid "
+                                <div class="col-md-4 rem">
+                                    <img src="./assets/images/booking_page_images/Booking-1.png " class="img-fluid imgb"
                                         alt="holla">
+                                    <img src="./assets/images/booking_page_images/Booking-sm-1.png "
+                                        class="img-fluid imgs" alt="holl">
                                 </div>
-                                <div class="col-md-8 col-sm-12">
+                                <div class="col-md-8">
                                     <div class="card-body cardbg ">
                                         <p class="card-title fw-bold"> Rhoncus suspendisse penatibus mauris, sit non
                                         </p>
@@ -196,7 +199,7 @@
                                                 <span class="ps-1"> Wifi </span>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="collective">
                                             <span class=" mt-2 ps-1"> City view </span>
                                             <span class=" mt-2 ps-2"> | </span>
                                             <span class=" mt-2 ps-2"> 3rd Floor </span>
@@ -216,8 +219,10 @@
                         <div class="card  border-0 mt-3" style="max-width: 700px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src=" ./assets/images/booking_page_images/Booking-3.png  " class="img-fluid "
-                                        alt="holla">
+                                    <img src=" ./assets/images/booking_page_images/Booking-3.png  "
+                                        class="img-fluid imgb" alt="holla">
+                                    <img src="./assets/images/booking_page_images/Booking-sm-2.png "
+                                        class="img-fluid imgs" alt="holl">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
@@ -255,8 +260,10 @@
                         <div class="card  border-0 mt-3" style="max-width: 700px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src=" ./assets/images/booking_page_images/Booking-4.png " class="img-fluid "
-                                        alt="holla">
+                                    <img src=" ./assets/images/booking_page_images/Booking-4.png "
+                                        class="img-fluid imgb" alt="holla">
+                                    <img src="./assets/images/booking_page_images/Booking-sm-3.png "
+                                        class="img-fluid imgs" alt="holl">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
@@ -286,7 +293,6 @@
                                         <button class="booking-img-btn mt-1"
                                             onclick="toggleDatePicker('datePicker3')">Available Dates</button>
                                         <input type="date" id="datePicker3" class="mt-1" style="display: none;">
-
                                         <span class="ms-1 fs-5 font-change ">From <b>$3490</b> /month</span>
                                     </div>
                                 </div>
@@ -295,8 +301,10 @@
                         <div class="card  border-0 mt-3" style="max-width: 700px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src=" ./assets/images/booking_page_images/Booking-5.png  " class="img-fluid "
-                                        alt="holla">
+                                    <img src=" ./assets/images/booking_page_images/Booking-5.png  "
+                                        class="img-fluid imgb " alt="holla">
+                                    <img src="./assets/images/booking_page_images/Booking-sm-4.png "
+                                        class="img-fluid imgs" alt="holl">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body cardbg ">
@@ -336,7 +344,9 @@
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src=" ./assets/images/booking_page_images/Booking-6.png "
-                                            class="img-fluid " alt="holla">
+                                            class="img-fluid imgb " alt="holla">
+                                        <img src="./assets/images/booking_page_images/Booking-sm-5.png "
+                                            class="img-fluid imgs" alt="holl">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
@@ -375,7 +385,9 @@
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src=" ./assets/images/booking_page_images/Booking-7.png  "
-                                            class="img-fluid " alt="holla">
+                                            class="img-fluid imgb " alt="holla">
+                                        <img src="./assets/images/booking_page_images/Booking-sm-6.png "
+                                            class="img-fluid imgs" alt="holl">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
@@ -405,7 +417,6 @@
                                             <button class="booking-img-btn mt-1"
                                                 onclick="toggleDatePicker('datePicker6')">Available Dates</button>
                                             <input type="date" id="datePicker6" class="mt-1" style="display: none;">
-
                                         </div>
                                     </div>
                                 </div>
@@ -413,8 +424,10 @@
                             <div class="card  border-0 mt-3" style="max-width: 700px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src=" ./assets/images/booking_page_images/Booking-8.png" class="img-fluid "
-                                            alt="holla">
+                                        <img src=" ./assets/images/booking_page_images/Booking-8.png"
+                                            class="img-fluid imgb " alt="holla">
+                                        <img src="./assets/images/booking_page_images/Booking-sm-7.png "
+                                            class="img-fluid imgs" alt="holl">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
@@ -453,7 +466,9 @@
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src="./assets/images/booking_page_images/Booking-9.png  "
-                                            class="img-fluid " alt="holla">
+                                            class="img-fluid imgb" alt="holla">
+                                        <img src="./assets/images/booking_page_images/Booking-sm-8.png "
+                                            class="img-fluid imgs" alt="holl">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body cardbg ">
@@ -508,7 +523,7 @@
 
         <!-- Apartments -->
         <section id="apartments" class="py-5">
-            <div class="container-sm" data-aos="fade-down">
+            <div class="container-sm" >
                 <div class="col-lg-12">
                     <h2 class="fw-bold">Apartment for rent in London</h2>
                     <p>A truly global city, London has long been considered a cutting-edge metropolis and hub for
