@@ -1,3 +1,5 @@
+
+// form-validation
 function validateForm() {
     console.log('Form submitted'); // Check if the function is being called
 
@@ -51,3 +53,22 @@ function isValidPhoneNumber(phone) {
     // Add your phone number validation logic here
     return true;
 }
+
+
+
+// footer validation
+(() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+//end validation
