@@ -35,3 +35,21 @@ const swiper = new Swiper('.sample-slider', {
         // }
 
   });
+
+  
+let addBtn = document.querySelector('.addbtn');
+let minusBtn = document.querySelector('.minusbtn');
+let countNum = document.querySelector('.count');
+let defaultCount = 0;
+
+addBtn.addEventListener('click', () => {
+    defaultCount++;
+    countNum.textContent = defaultCount;
+});
+
+minusBtn.addEventListener('click', () => {
+    if(defaultCount > 0) {
+        defaultCount--;
+        countNum.textContent = defaultCount;
+    }
+})
