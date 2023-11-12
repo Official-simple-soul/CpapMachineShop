@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex Living</title>
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--bootstrap-library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!---------------bootstrap-cdn---------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/threads?f=brands&s=solid">
+    <!--font awesome script-->
+    <script src="https://kit.fontawesome.com/b947a64090.js" crossorigin="anonymous"></script>
+    <!--google font Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!---->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!--css-->
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="100">
+    <header id="header">
+        <!------------Navigation------------>
+        <nav class="navbar navbar-expand-lg container-fluid overflow-hidden">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="./index.html"><img src="./assets/images/HomePage_images/Logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href=".">Landlords</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link" href="./contactpage.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="./signup.html">
+                            <button type="button" class=" btn btn-primary">Sign In</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!----------------Navigation-end---------------->
+    </header>
+    <main class="bg-white overflow-hidden">
+        <div>
+            <div class="hero-bg-img position-relative">
+                <div class="hero-bg-img-text-wrapper bg-white card">
+                    <div class="p-md-5 py-3 px-5">
+                        <h1>We rent your<br> property</h1>
+                        <p class="pt-2">Vel mattis integer pulvinar morbi quis<br>amet eu. In nunc facilisis
+                            proin<br>fermentum,
+                            consectetur cursus.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="img-input-wrapper position-absolute d-flex justify-content-between align-items-center bg-white">
+                    <div class="d-flex align-items-center input-width">
+                        <i class="fa-solid fa-magnifying-glass px-2"></i>
+                        <input type="text" class="py-2 fw-bold search-input" placeholder="Search">
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <form action="" class="form-group">
+                            <select class="py-2 me-5 fw-bold">
+                                <option value="">Most popular cities</option>
+                                <option value="london">London</option>
+                                <option value="newyork">NewYork</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <input type="text" name="daterange" placeholder="move-in" class="py-2 me-5 fw-bold" />
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="d-flex align-items-center place-user-wrapper">
+                            <i class="fa-solid fa-user-group px-2"></i>
+                            <p class="mb-0 px-2 fw-bold">Guest</p>
+                            <button type="button" class="bg-white mx-2 addbtn"><i class="fa-solid fa-plus"></i></button>
+                            <p class="mb-0 px-2 count fw-bold">0</p>
+                            <button type="button" class="bg-white mx-2 minusbtn"><i
+                                    class="fa-solid fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <button type="submit" class="hero-search-btn fw-bold">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card future-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6 overflow-hidden">
+                            <div class="future-img-wrapper">
+                                <img src="./assets/images/HomePage_images/Images 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="future-text">
+                                <h2 class="mb-3 text-center text-md-start">The future is flexible</h2>
+                                <p class="text-center text-md-start">We believe in a world where finding a home is just
+                                    a click away.
+                                    Whether you’re selling your home, travelling for work or moving to
+                                    a new city. Just bring your bags, and we’ll handle the rest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="text-center fw-bold">Id aliquam molestie nunc quis turpis<br> imperdiet quis</h2>
+                <p class="text-center">Euismod condimentum tempus quis nibh. Accumsan imperdiet non vulputate venenatis,
+                    lorem amet, purus<br> amet, sagittis. Cum orci quam enim adipiscing interdum purus.
+                </p>
+                <div class="row py-5 gy-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card assurance-home-wrapper">
+                            <div>
+                                <i class='bx bxs-calendar fs-1'></i>
+                                <h4 class="pt-3">Flexible living</h4>
+                                <p>Stay as Long or as little as you need with month-to-
+                                    month contracts
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card assurance-home-wrapper">
+                            <div class="mb-4">
+                                <i class="fa-solid fa-couch fs-1"></i>
+                                <h4 class="pt-3">Move-in ready</h4>
+                                <p>Ready to move in with everything you need</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card assurance-home-wrapper">
+                            <div>
+                                <i class='bx bx-wifi fs-1'></i>
+                                <h4 class="pt-3">High-speed Wi-Fi</h4>
+                                <p>Best in class internet speeds suitable for working
+                                    from home
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card assurance-home-wrapper">
+                            <div class="mb-4">
+                                <i class="fa-solid fa-comment-dots fs-1"></i>
+                                <h4 class="pt-3">24/7 support</h4>
+                                <p>On hand team for any issues you have</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5 pb-5">
+                <div class="text-center py-5">
+                    <h2 class="fw-bold">Choose your location</h2>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-lg-2 col-md-4 overflow-hidden">
+                        <h4 class="location-text text-center">Shoreditch</h4>
+                        <img src="./assets/images/HomePage_images/location1.png" alt="" class="location-img">
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="location-text text-center">City of London</h4>
+                        <img src="./assets/images/HomePage_images/location2.png" alt="" class="location-img">
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="location-text text-center">The West End</h4>
+                        <img src="./assets/images/HomePage_images/location3.png" alt="" class="location-img">
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="location-text text-center">Kensington</h4>
+                        <img src="./assets/images/HomePage_images/location4.png" alt="" class="location-img">
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="location-text text-center">NewYork</h4>
+                        <img src="./assets/images/HomePage_images/location5.png" alt="" class="location-img">
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="location-text text-center">Hammersmith</h4>
+                        <img src="./assets/images/HomePage_images/location6.png" alt="" class="location-img">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="button" class="btn btn-success">View all spaces</button>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <div class="bookspace-bg-img d-flex justify-content-start align-items-center">
+                    <div class="p-md-5 mx-md-5 ps-3 ps-md-0">
+                        <h2 class="text-white fw-bold">Bespoke spaces</h2>
+                        <p class="text-white book-text">Expertly designed to create extraordinary spaces with the
+                            flexible renter
+                            in mind
+                        </p>
+                        <a href="./bookingpage.html">
+                            <button type="button" class="btn btn-warning mt-4">Start Booking</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5 py-5">
+                <div>
+                    <h2 class="text-center fw-bold">Corporate Partnerships</h2>
+                    <p class="text-center">We work with 100+ companies to meet accommodation needs in London. Offer a
+                        dedicated<br>
+                        booking manager that can help to find properties for your needs.
+                    </p>
+                </div>
+                <div class="row pt-4 gy-5 overflow-hidden">
+                    <div class="col-md-4">
+                        <div class="card assurance-home-wrapper">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                <h4 class="pt-3">Booking manager</h4>
+                                <p>We do the searching for you</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card assurance-home-wrapper">
+                            <div>
+                                <i class="fa-solid fa-user fs-1"></i>
+                                <h4 class="pt-3">Account manager</h4>
+                                <p>Preferred partner rates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card assurance-home-wrapper">
+                            <div>
+                                <i class='bx bxs-file fs-1'></i>
+                                <h4 class="pt-3">Flexible terms</h4>
+                                <p>Extend on short notice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2 class="text-center fw-bold">What our partners think</h2>
+                    <p class="text-center">See what our partners say about us</p>
+                </div>
+                <div class="swiper my-5 position-relative overflow-hidden">
+                    <div class="swiper-wrapper py-4">
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7.png" alt="" class="mb-3">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Annie</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7 (1).png" alt=""
+                                            class="mb-3">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Jessica</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7 (2).png" alt=""
+                                            class="mb-3">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Gabriel</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7 (3).png" alt=""
+                                            class="mb-3 partner-profile">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Jimmy</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7 (4).png" alt=""
+                                            class="mb-3 partner-profile">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Michael</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card swip-wrapper p-5">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/HomePage_images/Ellipse 7 (5).png" alt=""
+                                            class="mb-3 partner-profile">
+                                        <div class="ps-3">
+                                            <h4 class="mb-0 fw-bold">Gwen</h4>
+                                            <p>Landlord in SE1</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim
+                                            nibh sed
+                                            condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis
+                                            fermentum fames
+                                            habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu
+                                            faucibus
+                                            aliquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div type="button" class="swiper-button-prev"></div>
+                    <div type="button" class="swiper-button-next"></div>
+                    <button type="button" class="swip-prev-btn"><i class="fa-solid fa-caret-left"></i></button>
+                    <button type="button" class="swip-next-btn"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2 class="text-center fw-bold">Read our blog</h2>
+                </div>
+                <div class="swiperFirst my-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog1.png" alt="" class="blog-img">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Feugiat gravida sed sit lacus sagittis</h3>
+                                        <p class="blog-para">Convallis eu vel fames feugiat et venenatis nulla ipsum.
+                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">1 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog2.png" alt="" class="blog-img">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Turpis elit in dictum eget eget</h3>
+                                        <p class="blog-para">Convallis eu vel fames feugiat et venenatis nulla ipsum.
+                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">3 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog3.png" alt="" class="blog-img">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Faucibus egestas ut sit purus ultricies at eu</h3>
+                                        <p class="blog-para">Viverra tellus risus lacus commodo urna fringilla cursus
+                                            nulla amet.</p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">3 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog4.png" alt=""
+                                            class="blog-img-edit">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Feugiat gravida sed sit lacus sagittis</h3>
+                                        <p class="blog-para">Convallis eu vel fames feugiat et venenatis nulla ipsum.
+                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">2 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog5.png" alt=""
+                                            class="blog-img-edit">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Turpis elit in dictum eget eget</h3>
+                                        <p class="blog-para">Convallis eu vel fames feugiat et venenatis nulla ipsum.
+                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">2 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-img-text-wrapper">
+                                <div class="card blog-img-text">
+                                    <div>
+                                        <img src="./assets/images/HomePage_images/blog6.jpg" alt=""
+                                            class="blog-img-edit">
+                                    </div>
+                                    <div class="p-4 my-4">
+                                        <h3 class="fw-bold fs-2">Turpis elit in dictum eget eget</h3>
+                                        <p class="blog-para">Convallis eu vel fames feugiat et venenatis nulla ipsum.
+                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16 13H12C11.7348 13 11.4804 12.8946 11.2929 12.7071C11.1054 12.5196 11 12.2652 11 12V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13Z"
+                                                    fill="#181A18" />
+                                            </svg>
+                                            <h4 class="blog-h4 ps-3 mb-0">3 min read</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="./blog.html">
+                        <button type="button" class="btn btn-success">Read more</button>
+                    </a>
+                </div>
+            </div>
+            <div class="container my-5 py-5">
+                <div>
+                    <h2 class="text-center fw-bold">Useful links</h2>
+                </div>
+                <div class="row mt-5 gy-3">
+                    <div class="col-md-5">
+                        <ul class="useful-link-list">
+                            <li>
+                                <a href="" class="d-flex align-items-center">West London Apartments <span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex align-items-center">Riverside Apartments <span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex align-items-center">Apartments in Finance Sector City of
+                                    London<span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex align-items-center">Apartments in Soho, Fitrovia <span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="" class="d-flex align-items-center">East London Aaprtments <span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="useful-link-list mt-3">
+                            <li>
+                                <a href="">
+                                    Suitable for Families or Groups<span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Apartments with Parking<span><i class="fa-solid fa-arrow-right ps-2"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Apartments with Elevator<span><i class="fa-solid fa-arrow-right ps-2"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Apartments suitable for physical disabilities<span><i
+                                            class="fa-solid fa-arrow-right ps-2"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <div class="dictum-bg-img mb-5">
+                    <div class="card dictum-select-wrapper bg-white">
+                        <div class="text-center p-5">
+                            <h1 class="fw-bold">Dictum nunc</h1>
+                            <p class="blog-para py-3">Vel mattis integer pulvinar morbi quis<br> amet eu. In nunc
+                                facilisis proin<br> fermentum, consectetur cursus. </p>
+                            <form action="">
+                                <select class="dictum-select py-2 px-2">
+                                    <option value="">Choose City</option>
+                                    <option value="london">London</option>
+                                    <option value="newyork">Newyork</option>
+                                    <option value="kensington">Kensington</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container py-5">
+        <div class="row gy-4">
+            <div class="col-lg-3">
+                <div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <img src="./assets/images/HomePage_images/Logo.png" alt="">
+                    </div>
+                    <div class="ps-lg-3 d-none d-md-block">
+                        <p class="footer-contact mb-0 py-4">Contact number: 02033074477</p>
+                        <div class="d-flex">
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="px-2 text-success">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="mt-2">
+                            <p class="footer-contact">&copy;2021 Flex Living</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row gy-4">
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Company</p>
+                            <ul class="">
+                                <li class="py-2">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">About us</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Guest</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-company text-center">
+                            <p>Privacy</p>
+                            <ul>
+                                <li class="py-2">
+                                    <a href="#" class="nobreak">Tearms of Service</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#" class="nobreak">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-form-wrapper">
+                    <p class="mb-1 text-center text-md-start foot-p">Stay up to date</p>
+                    <p class="text-center text-md-start">Be the first to know about our newest apartments</p>
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <div class=" my-4">
+                                <input type="email" class="form-control" id="validationCustom01"
+                                    placeholder="Enter email address" required>
+                                <span class="pop"></span>
+                                <div class="invalid-feedback">
+                                    Please enter your email address!
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <button type="submit" id="sendbtn" class="btn btn-success">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-lg-3 d-block d-md-none">
+                <p class="footer-contact mb-0 py-4 text-center">Contact number: 02033074477</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-linkedin-in fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-facebook-f fs-4"></i>
+                    </a>
+                    <a href="#" class="px-2 text-success">
+                        <i class="fa-brands fa-twitter fs-4"></i>
+                    </a>
+                </div>
+                <div class="mt-2">
+                    <p class="footer-contact text-center">&copy;2021 Flex Living</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="./js/homepage.js"></script>
+</body>
+
+</html>
