@@ -35,7 +35,7 @@ if (signinForm) {
             return;
         }
 
-        window.location.href = 'index.html'
+        window.location.href = 'bookingpage.html'
     });
 
 }
