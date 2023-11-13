@@ -19,6 +19,17 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 header {
@@ -133,6 +144,42 @@ main {
 
 .carousel-control-next {
     right: 80px;
+}
+
+.text-success {
+    color: #064749 !important;
+}
+
+.btn-success {
+    background-color: #064749 !important;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 9px 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.btn-success:hover {
+    transform: scale(1.01);
+    background-color: #033031 !important
+}
+
+.footer-company ul {
+    padding-left: 0px;
+}
+
+.footer-company ul li {
+    list-style-type: none;
+}
+
+.footer-company ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Text, #181A18);
+    line-height: 24px;
 }
 
 /* Tablet */
