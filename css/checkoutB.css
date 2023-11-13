@@ -23,6 +23,7 @@ a:link {
 
 main {
     padding-top: 100px !important;
+    overflow-x: hidden;
 }
 
 .btn-primary {
