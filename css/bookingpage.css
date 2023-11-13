@@ -457,6 +457,10 @@ ul {
     .imgs {
         display: block;
     }
+    iframe {
+        width: 100%;
+    
+    }
 
 
 
@@ -495,7 +499,10 @@ ul {
         display: block;
     }
 
-
+    iframe {
+        width: 100%;
+    
+    }
 
     .card-body {
         width: 280px;
@@ -562,4 +569,59 @@ ul {
 
     }
 
+    iframe {
+        width: 100%;
+    
+    }
+
 }
+
+/* CHECK */
+
+@media screen and (max-width: 590px) and (min-width: 568px) {
+    .imgb {
+        display: none;
+    }
+
+    .imgs {
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+    
+    }
+
+    .card-body {
+        height: 208px;
+        width: 280px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+
+    .card-title {
+        font-size: 14px !important;
+    }
+
+    .card-body span {
+        font-size: 12px;
+    }
+
+
+
+    .rem {
+        width: 100%;
+    }
+
+    .card .row>* {
+        max-width: 100px;
+
+    }
+
+}
+
+
+
+
+
